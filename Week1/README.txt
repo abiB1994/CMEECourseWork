@@ -1,4 +1,3 @@
-Week 1 repository: Introduction to CMEE
 .
 ├── Code
 │   ├── boilerplate.sh
@@ -7,26 +6,9 @@ Week 1 repository: Introduction to CMEE
 │   ├── CountLines.sh
 │   ├── csvtospace.sh
 │   ├── FirstBiblio.bib
-│   ├── FirstExample.aux
-│   ├── FirstExample.bbl
-│   ├── FirstExample.blg
-│   ├── FirstExample.log
-│   ├── FirstExample.pdf
 │   ├── FirstExample.tex
-│   ├── ModernCV_ntrp_Template.aux
-│   ├── ModernCV_ntrp_Template.dvi
-│   ├── ModernCV_ntrp_Template.log
-│   ├── ModernCV_ntrp_Template.out
-│   ├── ModernCV_ntrp_Template.tex
 │   ├── MyExampleScript.sh
 │   ├── tabtocsv.sh
-│   ├── template.aux
-│   ├── template.dvi
-│   ├── template-es.tex
-│   ├── template.log
-│   ├── template.out
-│   ├── template.tex
-│   ├── template-zh.tex
 │   ├── UnixPract1.txt
 │   └── variables.sh
 ├── Data
@@ -66,4 +48,4 @@ Week 1 repository: Introduction to CMEE
         ├── File4.csv
         └── File4.txt
 
-11 directories, 54 files
+11 directories, 37 files
