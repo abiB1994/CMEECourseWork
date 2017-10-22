@@ -10,32 +10,16 @@ My CMEE 2017-18 Coursework Repository
 │   │   ├── CountLines.sh
 │   │   ├── csvtospace.sh
 │   │   ├── FirstBiblio.bib
-│   │   ├── FirstExample.aux
-│   │   ├── FirstExample.bbl
-│   │   ├── FirstExample.blg
-│   │   ├── FirstExample.log
-│   │   ├── FirstExample.pdf
 │   │   ├── FirstExample.tex
-│   │   ├── ModernCV_ntrp_Template.aux
-│   │   ├── ModernCV_ntrp_Template.dvi
-│   │   ├── ModernCV_ntrp_Template.log
-│   │   ├── ModernCV_ntrp_Template.out
-│   │   ├── ModernCV_ntrp_Template.tex
 │   │   ├── MyExampleScript.sh
 │   │   ├── tabtocsv.sh
-│   │   ├── template.aux
-│   │   ├── template.dvi
-│   │   ├── template-es.tex
-│   │   ├── template.log
-│   │   ├── template.out
-│   │   ├── template.tex
-│   │   ├── template-zh.tex
 │   │   ├── UnixPract1.txt
 │   │   └── variables.sh
 │   ├── Data
 │   │   ├── 407228326.fasta
 │   │   ├── 407228412.fasta
 │   │   └── E.coli.fasta
+│   ├── README.txt
 │   └── Sandbox
 │       ├── Data
 │       │   ├── spawannxs.txt
@@ -114,4 +98,4 @@ My CMEE 2017-18 Coursework Repository
         ├── trycatch.R
         └── Vectorize2.R
 
-21 directories, 92 files
+21 directories, 76 files
