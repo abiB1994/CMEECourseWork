@@ -1,0 +1,393 @@
+Starting weekly assessment for Abigail, Week2
+
+Current Marks = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 2.07 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: Week1, Assessment, Week2, Week4, .git, Week3
+
+Found the following files in parent directory: README.txt, .gitignore
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+**********************************************************************
+*~ 
+*.tmp
+*.RData 
+*.Rhistory
+**********************************************************************
+
+Found README in parent directory, named: README.txt
+
+Printing contents of README.txt:
+**********************************************************************
+My CMEE 2017-18 Coursework Repository
+.
+├── README.txt
+├── temporary.tmp
+├── Week1
+│   ├── Code
+│   │   ├── boilerplate.sh
+│   │   ├── CompileLaTeX.sh
+│   │   ├── ConcatenateTwoFiles.sh
+│   │   ├── CountLines.sh
+│   │   ├── csvtospace.sh
+│   │   ├── FirstBiblio.bib
+│   │   ├── FirstExample.tex
+│   │   ├── MyExampleScript.sh
+│   │   ├── tabtocsv.sh
+│   │   ├── UnixPract1.txt
+│   │   └── variables.sh
+│   ├── Data
+│   │   ├── 407228326.fasta
+│   │   ├── 407228412.fasta
+│   │   └── E.coli.fasta
+│   ├── README.txt
+│   └── Sandbox
+│       ├── Data
+│       │   ├── spawannxs.txt
+│       │   └── TestFind
+│       │       ├── Dir1
+│       │       │   ├── Dir11
+│       │       │   │   └── Dir111
+│       │       │   │       └── File111.txt
+│       │       │   ├── File1.csv
+│       │       │   ├── File1.tex
+│       │       │   └── File1.txt
+│       │       ├── Dir2
+│       │       │   ├── file2.csv
+│       │       │   ├── file2.tex
+│       │       │   └── File2.txt
+│       │       └── Dir3
+│       │           └── File3.txt
+│       ├── ListRootDir.txt
+│       ├── test.txt
+│       └── TestWild
+│           ├── Anotherfile.csv
+│           ├── Anotherfile.txt
+│           ├── File1.csv
+│           ├── File1txt
+│           ├── File1.txt
+│           ├── File2.csv
+│           ├── File2.txt
+│           ├── File3.csv
+│           ├── File3.txt
+│           ├── File4.csv
+│           └── File4.txt
+├── Week2
+│   ├── Code
+│   ├── Data
+│   ├── README.txt
+│   └── Sandbox
+└── Week3
+    ├── Code
+    │   ├── apply1.R
+    │   ├── apply2.R
+    │   ├── Bin_width.R
+    │   ├── browse.R
+    │   ├── case_study1.R
+    │   ├── case_study2.R
+    │   ├── case_study3.R
+    │   ├── Multi-f-plots.R
+    │   ├── next.R
+    │   ├── practical_9.2.R
+    │   ├── Pub_ready_ggplot.R
+    │   ├── Ricker.R
+    │   ├── sample.R
+    │   ├── tapply.R
+    │   ├── TAutoCorr.R
+    │   ├── Try.R
+    │   ├── var_geoms.R
+    │   ├── Vectorize1.R
+    │   └── Vectorize2.R
+    ├── Data
+    │   ├── EcolArchives-E089-51-D1.csv
+    │   ├── KeyWestAnnualMeanTemperature.RData
+    │   ├── PoundHillData.csv
+    │   ├── PoundHillMetaData.csv
+    │   └── Results.txt
+    ├── README.txt
+    ├── Results
+    │   ├── Girko.pdf
+    │   ├── MyBars.pdf
+    │   ├── MyFirst-ggplot2-Figure.pdf
+    │   ├── PP_Results.csv
+    │   ├── Pred_Lattice.pdf
+    │   ├── Pred_Prey_Overlay.pdf
+    │   ├── Prey_Lattice.pdf
+    │   ├── SizeRatio_Lattice.pdf
+    │   └── TAutoCorr.svg
+    └── Sandbox
+        ├── trycatch.R
+        └── Vectorize2.R
+
+21 directories, 76 files
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 4 weekly directories: Week1, Week2, Week3, Week4
+
+The Week2 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK2...
+
+Found the following directories: Code, Sandbox
+
+Found the following files: README.txt
+
+Checking for readme file in weekly directory...
+
+Found README in parent directory, named: README.txt
+
+Printing contents of README.txt:
+**********************************************************************
+.
+├── Code
+├── Data
+├── README.txt
+└── Sandbox
+
+3 directories, 1 file
+**********************************************************************
+
+Data directory missing!
+
+Results directory missing!
+
+Found 3 code files: boilerplate.py, basic_csv.py, basic_io.py
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file boilerplate.py...
+
+File contents are:
+**********************************************************************
+#!/usr/bin/python
+
+"""Description of this program
+you can use several lines"""
+
+__author__ = 'Samraat Pawar (s.pawar@imperial.ac.uk)'
+__version__ = '0.0.1'
+
+# imports
+import sys # module to interface our program with the operating system
+
+# constants can go here
+
+
+# functions can go here
+def main(argv):
+	print 'This is a boilerplate' # NOTE: indented using two tabs or 4 spaces
+	return 0
+
+if __name__ == "__main__": #makes sure the "main" function is called from commandline
+	status = main(sys.argv)
+	sys.exit(status)
+**********************************************************************
+
+Testing boilerplate.py...
+
+boilerplate.py is a Python script file;
+ checking for docstrings...
+
+Found one or more doctrings!
+
+Output (only first 500 characters): 
+
+**********************************************************************
+This is a boilerplate
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.01078s
+
+======================================================================
+Inspecting script file basic_csv.py...
+
+File contents are:
+**********************************************************************
+import csv
+
+# Read a file containing:
+# 'Species','Infraorder','Family','Distribution','Body mass male (Kg)'
+f = open('../Sandbox/testcsv.csv','rb')
+
+csvread = csv.reader(f)
+temp = []
+for row in csvread:
+	temp.append(tuple(row))
+	print row
+	print "The species is", row[0]
+
+f.close()
+
+# write a file containing only species name and Body mass
+f = open('../Sandbox/testcsv.csv','rb')
+g = open('../Sandbox/bodymass.csv','wb')
+
+csvread = csv.reader(f)
+csvwrite = csv.writer(g)
+for row in csvread:
+	print row
+	csvwrite.writerow([row[0], row[4]])
+
+f.close()
+g.close()
+**********************************************************************
+
+Testing basic_csv.py...
+
+basic_csv.py is a Python script file;
+ checking for docstrings...
+
+Found no doctrings!
+1 pt deducted
+
+Current Marks = 99
+
+Output (only first 500 characters): 
+
+**********************************************************************
+['Species', 'Infraorder', 'Family', 'Distribution', 'Body mass male (Kg)']
+The species is Species
+['Daubentonia_madagascariensis', 'Chiromyiformes ', 'Daubentoniidae', 'Madagascar', '2.7']
+The species is Daubentonia_madagascariensis
+['Allocebus_trichotis', 'Lemuriformes', 'Cheirogaleidae', 'Madagascar', '0.1']
+The species is Allocebus_trichotis
+['Avahi_laniger', 'Lemuriformes', 'Indridae', 'America', '1.03']
+The species is Avahi_laniger
+['Avahi_occidentalis', 'Lemuriformes', 'Indridae', 'Madagasc
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.01170s
+
+======================================================================
+Inspecting script file basic_io.py...
+
+File contents are:
+**********************************************************************
+#############################
+# FILE INPUT
+#############################
+# Open a file for reading
+f = open('../Sandbox/test.txt', 'r')
+# use "implicit" for loop:
+# if the object is a file, python will cycle over lines
+for line in f:
+	print line, # the "," prevents adding a new line
+
+# close the file
+f.close()
+
+# Same example, skip blank lines
+f = open('../Sandbox/test.txt', 'r')
+for line in f:
+	if len(line.strip()) > 0:
+		print line,
+
+f.close()
+
+#############################
+# FILE OUTPUT
+#############################
+# Save the elements of a list to a file
+list_to_save = range(100)
+
+f = open('../Sandbox/testout.txt','w')
+for i in list_to_save:
+	f.write(str(i) + '\n') ## Add a new line at the end
+
+f.close()
+
+#############################
+# STORING OBJECTS
+#############################
+# To save an object (even complex) for later use
+my_dictionary = {"a key": 10, "another key": 11}
+
+import pickle
+
+f = open('../Sandbox/testp.p','wb') ## note the b: accept binary files
+
+pickle.dump(my_dictionary, f)
+f.close()
+
+## Load the data again
+f = open('../Sandbox/testp.p','rb')
+another_dictionary = pickle.load(f)
+f.close()
+
+print another_dictionary
+**********************************************************************
+
+Testing basic_io.py...
+
+basic_io.py is a Python script file;
+ checking for docstrings...
+
+Found no doctrings!
+1 pt deducted
+
+Current Marks = 98
+
+Output (only first 500 characters): 
+
+**********************************************************************
+First Line
+Second Line
+
+Third Line
+
+Fourth Line
+First Line
+Second Line
+Third Line
+Fourth Line
+{'another key': 11, 'a key': 10}
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.01377s
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 0 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Marks for the Week = 98
+
+NOTE THAT THESE ARE NOT THE FINAL MARKS FOR THE WEEK, BUT AN UPPER BOUND ON THE MARKS!
