@@ -16,7 +16,7 @@ text = text.decode('ascii', 'ignore')
 
 # Now write a regular expression my_reg that captures # the Kingdom, 
 # Phylum and Species name for each species and prints it out neatly:
-my_reg2 = r'.*\bKingdom\b\s*([a-zA-Z]+)\s*.*\bPhylum\b\s*([a-zA-Z]+)\s*.*\bSpecies\b\s*([a-zA-Z]+\s[a-zA-Z]+)' 
+my_reg2 = r'.\bKingdom\b\s([a-zA-Z]+)\s*.*\bPhylum\b\s*([a-zA-Z]+)\s*.*\bSpecies\b\s*([a-zA-Z]+\s[a-zA-Z]+)' 
 my_reg = r'Kingdom\s*([a-zA-Z]+)|Phylum\s*([a-zA-Z]+)|\s*Species\s*([a-zA-Z]+\s[a-zA-Z]+)'         
 kingdom_search = re.findall(my_reg, text)
 kingdom2_search = re.findall(my_reg2, text)
@@ -24,3 +24,7 @@ kingdom2_search = re.findall(my_reg2, text)
 # Keep in mind that there are multiple ways to skin this cat! 
 text
 print kingdom2_search
+
+
+my_reg3 = r'\bKingdom\b\s+?([a-zA-Z]+)\s+?.+?\bPhylum\b\s+?([a-zA-Z]+)\s+?.+?\bSpecies\b\s+?([a-zA-Z]+\s[a-zA-Z]+)' 
+kingdom3_search = re.findall(my_reg3, text)
