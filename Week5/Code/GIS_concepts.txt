@@ -1,0 +1,42 @@
+GIS Concepts
+
+Geographic Info = [Creating, Storing, Manipulating, Analysing, Presenting] 
+GIS = Fancy form of database
+
+GI - [A set of co-ord, a known co-ord syst] BOTH bits required
+
+Lattitude - An angle above or below equat. Points of equal latitude form a parallel
+			Distance between parallels is constant. +/- 90 degrees
+
+Longitude - An angle around the equator, Points of equal form a meridian,
+			Distance between meridians vary - North and South pole Longs. meet
+			+/- 360 degrees
+
+
+Geo. Co-ord Syst (GCS) = Earth is not a sphere! ~1 in 298 flattening Affects data collection 
+					and understanding
+
+Datums - WGS 1984 - Datums are co-ordinate systems - Telling us what shape
+		the earth is, essential so that co-ords are correct + recreatable
+
+Datums are interchangeable with GCS 
+
+Geoid - Surface of equal gravitational force, lat + long set from centre of earths mass
+		0.0 in dif location when using gravity
+
+
+WGS 1984 - Combined Datum + Geoid, Used by GPS, Off Greenwich by a little due to going
+			through centre of mass
+			
+Countries adopt local datum models that fit better locally
+
+British grid - OSGB 36 datum
+
+Datum shift - shift in lat/long values when changing datum
+
+Spherical Geometry - Ellipsoidal Geometry 
+
+
+
+
+

@@ -1,9 +1,8 @@
 #!/usr/bin/python
 
-"""Description of this program
-you can use several lines"""
+"""Boilerplate"""
 
-__author__ = 'Samraat Pawar (s.pawar@imperial.ac.uk)'
+__author__ = 'Abigail Baines a.baines17@imperial.ac.uk'
 __version__ = '0.0.1'
 
 # imports

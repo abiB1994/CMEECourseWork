@@ -1,0 +1,28 @@
+Digital pathology - plant path lacking so good avenue to go down
+Machine learning - achieving random forests + multispetral features 
+leaf lesions
+Touch on biology - host pathogen interaction
+broadly applicable
+
+
+Backend:
+Normalise and standardise data - iding objects - how do we group?
+Process - extract a feature
+post hoc tests
+Classifying objects of interest
+
+
+Frontend:
+Web interface?
+Experts defining classifiers?
+How quickly?
+GUI
+
+What am I going to have to learn to do this?
+
+Overall outcome
+
+
+Look at ilastik!!
+Ask Samraat about web interface
+

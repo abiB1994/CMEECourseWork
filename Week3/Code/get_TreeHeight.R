@@ -10,7 +10,7 @@ TreeHeight <- function(degrees, distance){
   return(height)
 }
 
-y = tools::file_path_sans_ext(gsub("../.*/", "", args[1]))
+y = tools::file_path_sans_ext(gsub("../.*/", "", args[1])) # getting the file name - all the extra bits!
 
 x = paste("../Results",paste(y, "treeheights.csv", sep = "_") , sep = "/")
 

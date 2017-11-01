@@ -1,3 +1,10 @@
+# !/usr/bin/env python
+
+"""Getting to grips with csvs"""
+
+__author__ = "Abigail Baines a.baines17@imperial.ac.uk"
+__version__ = '0.0.1'
+
 import csv
 
 # Read a file containing:

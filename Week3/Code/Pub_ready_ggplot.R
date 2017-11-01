@@ -1,3 +1,6 @@
+rm(list=ls())
+library(ggplot2)
+MyDF <- read.csv("../Data/EcolArchives-E089-51-D1.csv") # loading in data
 #ggplot
 
 qplot(log(Prey.mass), log(Predator.mass),
