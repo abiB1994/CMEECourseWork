@@ -7,9 +7,9 @@ summary(daphnia)
 par(mfrow  =  c(1,  2)) 	
 #Testing for outliers
 plot(Growth.rate  ~  Detergent,  data  =  daphnia) 	
+plot(Growth.rate  ~  Daphnia,  data  =  daphnia) 
 
-plot(Growth.rate  ~  Daphnia,  data  =  daphnia) 	
-require(dplyr)
+require(dplyr) # for piping
 
 daphnia  %>%   	
   group_by(Detergent)  %>% 	
@@ -18,8 +18,9 @@ daphnia  %>%
   group_by(Daphnia)  %>% 	
   summarise  (variance=var(Growth.rate)) 	
 
+#Modelling daphnia
 seFun  <- function(x)  { 	
-  sqrt(var(x)/length(x)) 	
+  sqrt(var(x)/length(x)) 	# standard error funct
 } 	
 
 detergentMean  <-  with(daphnia,  tapply(Growth.rate,  INDEX  =  Detergent, FUN  =  mean)) 	
@@ -30,6 +31,8 @@ cloneMean  <- with(daphnia,  tapply(Growth.rate,  INDEX  =  Daphnia,  FUN  =  me
 
 cloneSEM  <- with(daphnia,  tapply(Growth.rate,  INDEX  =  Daphnia,  FUN  =  seFun)) 	
 
+
+#plotting and changing margins
 par(mfrow=c(2,1),mar=c(4,4,1,1)) 	
 
 barMids  <-  barplot(detergentMean,  xlab  =  "Detergent  type",  ylab  =  "Population  
@@ -41,4 +44,7 @@ barMids  <-  barplot(cloneMean,  xlab  =  "Daphnia  clone",  ylab  =  "Populatio
 growth  rate",  ylim  =  c(0,  5)) 	
 
 arrows(barMids,  cloneMean - cloneSEM,  barMids,  cloneMean  +  cloneSEM, code  =  3,  angle  =  90) 	
+daphniaMod  <-  lm(Growth.rate  ~  Detergent  +  Daphnia,  data  =  daphnia) 	
+
+anova(daphniaMod) 	
 

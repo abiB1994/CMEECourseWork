@@ -1,0 +1,49 @@
+# Genomics - Day 1
+
+Understand how genomic data prod.
+sources of avail. data
+sources of DNA
+types of Qs to address
+Common analytical methods
+
+Human Genome Project
+
+Why?
+
+Pop genetics -
+
+Functional Genomics -
+
+Behavioural Genetics - Hybrid zones and diff behaviours 
+
+Single locus vs genomic data - mono- para - poly phyly 
+The tree that you get at any 1 locus is quite random! Need more than
+1 point to decide on a tree
+
+De novo - sequencing a species that we haven't seq. before
+vs
+re-seq - seq what we already know, easier to reconstruct
+
+Polymorphisms - Looking for heterozygous positions - sites that
+change in individuals
+
+RAD- seq - Restriction site Associated DNA seq - Shrinks genome into
+managable size -  Single Nucleotide Polymorphism (SNP discovery method)
+Where populations vary - Cannot discover NEW var with SNP, only look at 
+already know var. sites
+
+RNA - Seq
+
+
+
+
+
+
+
+
+
+
+
+
+
+

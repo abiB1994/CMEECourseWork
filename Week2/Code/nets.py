@@ -29,9 +29,13 @@ print node
 pos = nx.circular_layout(node.loc[:,"id"]) #Creating a circular network
 G = nx.DiGraph()
 G.add_nodes_from(node["id"])
-G.add_weighted_edges_from(edges)
-nx.draw(G, pos)
-
+for (u, v, w) in edges:
+	G.add_edge(u, v, weight = w)
+nx.draw_networkx(G, pos)
+edge_labels = dict([((u,v),d["weight"]) for u,v,d in G.edges(data=True)])
+nx.draw_networkx_edge_labels(G, pos, edge_labels = edge_labels)
+G = nx.relabel_nodes(G,node["id"])
+print G["ICL"]["CEH"]["weight"]
 #~ plt.gca().set_position([0, 0, 1, 1])
 
 plt.show() 

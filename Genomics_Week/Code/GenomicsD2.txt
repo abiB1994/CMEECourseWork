@@ -1,0 +1,71 @@
+#Population structure
+
+CLosely related orgs capable of mating
+pops evo.
+pop genetics - allele freqs. everything derives from all.freq.diffs.
+
+Mutations:
+SNP - Single Nucleotide POlymorph.
+Recomb-
+
+Hardy - Weinberg
+
+Allele freq - can get some genotype freqs if no evo.
+Cond. necessary:
+-pop infinite
+-no mut
+-no gene flow
+-random mate
+
+Some pops closer than others
+
+Panmixia:
+-Random mating
+-Outbred(expected hetero. is what you observe)
+-Genetically homozygous
+
+Demes:
+-More likely to mate with others in deme
+-Inbred
+-Mating non random
+
+F-statistics - Give us the observed heterozygosity relative to what you
+expect in idealised conditions (HW)
+
+Fst (Inbreeding coef. Subpop relative to total Pop)
+
+Fst = 1 - [obs(Aa)/ Exp(Aa)]		*Aa = Heterozygotes
+									* Exp(Aa) = 2pq (HW)
+
+Fit = Inbreeding coef. individual relative to total pop
+Fis = "									" to subpop
+
+
+Structure approach:
+
+-Non - heir. clust. method
+-only gen. data
+-Assumes K subpops instant. split- run with various k's to see which values fit data best
+-Attempts to maxim. HW and linkage equil.(associations between alleles)
+-Utilises allele freq. diff and corr between alleles to id. groups and group memb.
+-Assigns each indiv. a prop of ancestry 
+
+Demographic History:
+
+Fixation of Neutral Mutations:
+
+-For an locus , 2Nu mutat. nters a pop each gen
+-Each new mut has a prob of being fixed equal to its intitial freq 1/(2n)
+2nu * 1/(2n) = u Av. no. of subs. per locus per gen
+
+For all pops no matter what the size, mut rate is the same, but fixation time differs
+
+
+
+
+
+
+
+
+
+
