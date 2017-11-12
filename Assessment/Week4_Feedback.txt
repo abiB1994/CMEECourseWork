@@ -1,0 +1,990 @@
+Starting weekly assessment for Abigail, Week4
+
+Current Marks = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 8.00 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: Week6, Week1, Assessment, Week2, Week4, .git, Week3, Project, Genomics_Week, GIS_Week
+
+Found the following files in parent directory: README.txt, .gitignore
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+**********************************************************************
+*~ 
+*.tmp
+*.RData 
+*.Rhistory
+*.tif 
+*.shp 
+*.shx 
+*.cpg 
+*.dbf 
+*.prj 
+GIS_Week/Lectures/ 
+GIS_Week/SpatialMethods/ 
+GIS_Week/MAXENT_practical/
+Genomics_Week/bin/
+
+**********************************************************************
+
+Found README in parent directory, named: README.txt
+
+Printing contents of README.txt:
+**********************************************************************
+ My CMEE Coursework Repository 
+.
+├── Assessment
+│   ├── Week1_Feedback.txt
+│   └── Week2_Feedback.txt
+├── Project
+│   └── Pro_proposal.txt
+├── README.txt
+├── temporary.tmp
+├── Week1
+│   ├── Code
+│   │   ├── boilerplate.sh
+│   │   ├── CompileLaTeX.sh
+│   │   ├── ConcatenateTwoFiles.sh
+│   │   ├── CountLines.sh
+│   │   ├── csvtospace.sh
+│   │   ├── FirstBiblio.bib
+│   │   ├── FirstExample.tex
+│   │   ├── MyExampleScript.sh
+│   │   ├── tabtocsv.sh
+│   │   ├── UnixPract1.txt
+│   │   └── variables.sh
+│   ├── Data
+│   │   ├── 407228326.fasta
+│   │   ├── 407228412.fasta
+│   │   └── E.coli.fasta
+│   ├── README.txt
+│   └── Sandbox
+│       ├── Data
+│       │   ├── spawannxs.txt
+│       │   └── TestFind
+│       │       ├── Dir1
+│       │       │   ├── Dir11
+│       │       │   │   └── Dir111
+│       │       │   │       └── File111.txt
+│       │       │   ├── File1.csv
+│       │       │   ├── File1.tex
+│       │       │   └── File1.txt
+│       │       ├── Dir2
+│       │       │   ├── file2.csv
+│       │       │   ├── file2.tex
+│       │       │   └── File2.txt
+│       │       └── Dir3
+│       │           └── File3.txt
+│       ├── ListRootDir.txt
+│       ├── test.txt
+│       └── TestWild
+│           ├── Anotherfile.csv
+│           ├── Anotherfile.txt
+│           ├── File1.csv
+│           ├── File1txt
+│           ├── File1.txt
+│           ├── File2.csv
+│           ├── File2.txt
+│           ├── File3.csv
+│           ├── File3.txt
+│           ├── File4.csv
+│           └── File4.txt
+├── Week2
+│   ├── Code
+│   │   ├── align_seqs.py
+│   │   ├── basic_csv.py
+│   │   ├── basic_io.py
+│   │   ├── blackbirds.py
+│   │   ├── boilerplate.py
+│   │   ├── cfexercises.py
+│   │   ├── control_flow.py
+│   │   ├── debugme.py
+│   │   ├── dictionary.py
+│   │   ├── DNA.csv
+│   │   ├── DrawFW.py
+│   │   ├── lc1.py
+│   │   ├── lc2.py
+│   │   ├── loops.py
+│   │   ├── LV1.py
+│   │   ├── LV2.py
+│   │   ├── My_best.txt
+│   │   ├── nets.py
+│   │   ├── Nets.R
+│   │   ├── oaks.py
+│   │   ├── profileme.py
+│   │   ├── regexs.py
+│   │   ├── running_LV.sh
+│   │   ├── scope.py
+│   │   ├── sql2.py
+│   │   ├── sql.py
+│   │   ├── sysargv.py
+│   │   ├── test_control_flow.py
+│   │   ├── texput.log
+│   │   ├── timeitme.py
+│   │   ├── TraitInfo
+│   │   ├── tuple.py
+│   │   ├── using_name.py
+│   │   └── using_os.py
+│   ├── Data
+│   │   ├── blackbirds.txt
+│   │   ├── QMEE_Net_Mat_edges.csv
+│   │   ├── QMEE_Net_Mat_nodes.csv
+│   │   └── TestOaksData.csv
+│   ├── README.txt
+│   ├── Results
+│   │   └── output.log
+│   └── Sandbox
+│       ├── bodymass.csv
+│       ├── testcsv.csv
+│       └── test.txt
+├── Week3
+│   ├── Code
+│   │   ├── apply1.R
+│   │   ├── apply2.R
+│   │   ├── basic_io.R
+│   │   ├── Bin_width.R
+│   │   ├── boilerplate.R
+│   │   ├── browse.R
+│   │   ├── case_study1.R
+│   │   ├── case_study2.R
+│   │   ├── case_study3.R
+│   │   ├── get_TreeHeight.py
+│   │   ├── get_TreeHeight.R
+│   │   ├── Makefile
+│   │   ├── Multi-f-plots.R
+│   │   ├── MyResults.Rout
+│   │   ├── next.R
+│   │   ├── PP_Lattice.R
+│   │   ├── PP_Regress.R
+│   │   ├── Pub_ready_ggplot.R
+│   │   ├── Ricker.R
+│   │   ├── run_get_TreeHeight.sh
+│   │   ├── sample.R
+│   │   ├── tapply.R
+│   │   ├── TAutoCorr1.pdf
+│   │   ├── TAutoCorr.R
+│   │   ├── TAutoCorr.tex
+│   │   ├── TreeHeight.R
+│   │   ├── Try.R
+│   │   ├── var_geoms.R
+│   │   ├── Vectorize1.R
+│   │   └── Vectorize2.R
+│   ├── Data
+│   │   ├── EcolArchives-E089-51-D1.csv
+│   │   ├── KeyWestAnnualMeanTemperature.RData
+│   │   ├── PoundHillData.csv
+│   │   ├── PoundHillMetaData.csv
+│   │   ├── Results.txt
+│   │   └── trees.csv
+│   ├── README.txt
+│   ├── Results
+│   └── Sandbox
+│       ├── trycatch.R
+│       └── Vectorize2.R
+├── Week4
+│   ├── Code
+│   │   ├── Day1sws.R
+│   │   ├── Day2sws.R
+│   │   ├── Day3_4sws.R
+│   │   └── SWS15.R
+│   ├── Data
+│   │   ├── daphnia.txt
+│   │   └── SparrowSize.txt
+│   └── Results
+├── Week5
+│   └── Code
+│       ├── GIS_concepts.txt
+│       └── remote_sensing.txt
+└── Week6
+    ├── Code
+    │   ├── TestR.py
+    │   └── TestR.R
+    ├── Data
+    ├── Results
+    └── Sandbox
+
+35 directories, 134 files
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 7 weekly directories: GIS_Week, Genomics_Week, Week1, Week2, Week3, Week4, Week6
+
+The Week4 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK4...
+
+Found the following directories: Code, Data
+
+Found the following files: README.txt, .Rhistory
+
+Checking for readme file in weekly directory...
+
+Found README in parent directory, named: README.txt
+
+Printing contents of README.txt:
+**********************************************************************
+.
+├── Code
+│   ├── Day1sws.R
+│   ├── Day2sws.R
+│   ├── Day3_4sws.R
+│   └── SWS15.R
+├── Data
+│   ├── daphnia.txt
+│   └── SparrowSize.txt
+├── README.txt
+└── Results
+
+3 directories, 7 files
+**********************************************************************
+
+Results directory missing!
+
+Found 5 code files: Day3_4sws.R, SWSANOVAS.R, Day1sws.R, SWS15.R, Day2sws.R
+
+Found the following extra files: Rplots.pdf, .Rhistory, .RData
+0.5 pt deducted per extra file
+
+Current Marks = 98.5
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file Day3_4sws.R...
+
+File contents are:
+**********************************************************************
+#Day 3 + 4 sws
+
+rm(list=ls())
+d <- read.table("../Data/SparrowSize.txt",  header=TRUE) 	
+
+
+boxplot(d$Mass~d$Sex.1,  col  =  c("red",  "blue"),  ylab="Body  mass  (g)") 	
+
+t.test1  <-  t.test(d$Mass~d$Sex.1) 	
+
+t.test1 	
+
+
+d1<- as.data.frame(head(d,  50)) 	
+
+length(d1$Mass) 	
+
+t.test2  <-  t.test(d1$Mass~d1$Sex) 	
+
+t.test2 	
+
+
+#sws - 10
+
+
+plot(d$Mass~d$Tarsus,  ylab="Mass  (g)",  xlab="Tarsus  (mm)",  pch=19,  cex=0.4) 	#plotting a linear model!
+
+x<-c(1:100) 	#Making a linear model plot
+
+b<- 0.5 	
+
+m<-1.5 	
+
+y<-m*x+b 	
+
+plot(x,y,  xlim=c(0,100),  ylim=c(0,100),  pch=19,  cex=0.5) 	
+
+graphics.off()
+par(mfrow = c(2,1))
+plot(d$Mass~d$Tarsus,  ylab="Mass  (g)",  xlab="Tarsus  (mm)",  pch=19,  cex=0.4,  
+     ylim=c(-5,38),  xlim=c(0,22)) 	#Trying to see a potential intercept to calculate y = b + mx
+plot(d$Mass~d$Tarsus,  ylab="Mass  (g)",  xlab="Tarsus  (mm)",  pch=19,  cex=0.4) 	
+
+
+d1<- subset(d,  d$Mass!="NA") 	#Stripping data of NAs
+d2<- subset(d1,  d1$Tarsus!="NA") 	
+
+length(d2$Tarsus) 	
+
+model1<- lm(Mass~Tarsus,  data=d2) 	
+
+summary(model1) 	
+
+graphics.off()
+hist(model1$residuals)
+head(model1$residuals)
+
+model2<-lm(y~x) 	# R-squared of 1, as it's a made up data set 
+
+summary(model2) 	
+
+d2$z.Tarsus<- scale(d2$Tarsus) 	
+
+model3<- lm(Mass~z.Tarsus,  data=d2) 	
+
+summary(model3) 	
+
+plot(d2$Mass~d2$z.Tarsus,  pch=19,  cex=0.4) 	
+
+abline(v  =  0,  lty  =  "dotted") 	#plotting mass in relation to z.Tarsus
+
+head(d2)
+
+str(d)
+
+d$Sex<-as.numeric(d$Sex) 	
+
+
+par(mfrow  =c(2,  1)) 	
+#Testing slope of lm 
+plot(d$Wing  ~  d$Sex.1,  ylab="Wing(mm)") 	
+plot(d$Wing  ~  d$Sex,  xlab="Sex",  xlim=c(-0.1,1.1),  ylab="") 	
+abline(lm(d$Wing  ~  d$Sex),  lwd  =  2) 	
+text(0.15,  76,  "intercept") 	
+text(0.9,  77.5,  "slope",  col  =  "red") 	
+
+#t-test for Wing~sex on linear models
+
+d4 <- subset(d, d$Wing!="NA")
+m4<- lm(Wing~Sex, data = d4)
+t4 <- t.test(d4$Wing~d4$Sex, var.equal = TRUE)
+?t.test
+summary(m4)
+t4
+
+
+par(mfrow=c(2,2))
+plot(model3) # Mass against tarsus
+
+
+par(mfrow=c(2,2))
+plot(m4)
+**********************************************************************
+
+Testing Day3_4sws.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+	Welch Two Sample t-test
+
+data:  d$Mass by d$Sex.1
+t = -5.5654, df = 1682.9, p-value = 3.039e-08
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.7669117 -0.3672162
+sample estimates:
+mean in group female   mean in group male 
+            27.46852             28.03558 
+
+[1] 50
+
+	Welch Two Sample t-test
+
+data:  d1$Mass by d1$Sex
+t = 0.33484, df = 26.84, p-value = 0.7403
+alternative hypothesis: true difference in means is not equal to 0
+95 perce
+**********************************************************************
+
+Encountered error:
+Warning message:
+In summary.lm(model2) : essentially perfect fit: summary may be unreliable
+
+======================================================================
+Inspecting script file SWSANOVAS.R...
+
+File contents are:
+**********************************************************************
+#SWS ANOVAS
+
+rm(list=ls())
+d <- read.table("../Data/SparrowSize.txt",  header=TRUE)
+
+d1 <- subset(d, d$Wing!= "NA") #creating new df without NAs in Wing
+summary((d1$Wing))
+hist(d1$Wing)
+
+model1 <- lm(Wing~Sex.1, data = d1) #creating  a lm of Sex effect on Wing size
+summary(model1)
+boxplot(d1$Wing~d1$Sex.1,  ylab="Wing  length  (mm)")
+anova(model1) #ANOVAS test whether variation within groups is smaller than the variation between/amoung groups
+t.test(d1$Wing~d1$Sex.1,  var.equal=TRUE)
+
+
+boxplot(d1$Wing~d1$BirdID,  ylab="Wing  length  (mm)") # doesn't make much sense yet
+
+require(dplyr) 	
+
+d$Mass %>% cor.test(d$Tarsus, na.rm= TRUE) # piping from dplyr allows for shorter code! Testing correlation between Mass and Tarsus length
+d1  %>%   	#Taking data
+  
+  group_by(BirdID)  %>% 	#grouping by BirdID
+  
+  summarise  (count=length(BirdID)) # summarising data, how many counts for each ID
+
+
+count(d1,  BirdID)  #Same output as above, but count is a funct this time, not able to do : count(d1,  d1$BirdID)  %>% 	count(count) 	as the name would clash with function
+
+
+d1  %>%   	
+  
+  group_by(BirdID)  %>% 	
+  
+  summarise  (count=length(BirdID))    %>% 	
+  
+  count(count) 	#counting number of counts, i.e. 1 appears most..
+
+model3 <- lm(Wing~as.factor(BirdID),  data=d1) 	
+
+anova(model3) 	# T- test is about estimates, difference in size. ANOVA is diff in var amoung vs within. 
+
+boxplot(d$Mass~d$Year) # bird weight over years
+
+m2<-lm(d$Mass~as.factor(d$Year)) 	
+
+anova(m2) 	#is a variation (sig) amoung years, but which ones? do summary
+summary(m2)
+
+
+
+# Excercise:
+d2 = subset(d, d$Year!="2000")
+
+model4 <- lm(Mass ~ as.factor(Year), data = d2)
+anova(model4)  #Excluding the year 2000 results in no sig diff, 2000 was likely to be a recording/ human error , or possibly equiptment error
+summary(model4)
+
+
+# Anovas and repeatablity
+rm(list=ls())
+
+d <- read.table("../Data/SparrowSize.txt",  header=TRUE)
+
+d1<-subset(d,  d$Wing!="NA") 	
+
+model3<-lm(Wing~as.factor(BirdID),  data=d1) 	
+
+anova(model3) 	
+
+library(dplyr)
+count(d1,  BirdID) #working out n1, n2 etc
+
+d1  %>% 
+  group_by(BirdID)  %>%
+  summarise(count = length(BirdID)) %>%
+    summarise(length(BirdID)) #working out a
+
+
+# Excercise:
+
+ d2 <- subset(d, d$Mass!="NA")
+
+ 
+ d2 %>%
+   group_by(BirdID) %>%
+   summarise (count = length(Mass)) %>%
+   summarise (sum(count^2))
+ 
+a = 633
+d = 1704
+sn = 7226
+n0 = (1/(a -1)) * (d - (sn/d))
+
+model5 <- lm(Mass~as.factor(BirdID), data = d2)
+model5a <- anova(model3)
+sa <- (model5a$`Mean Sq`[1] - model5a$`Mean Sq`[2]) / n0
+sw <- model5a$`Mean Sq`[2]
+rep <- sa / (sw + sa)
+percentrep <- rep * 100
+**********************************************************************
+
+Testing SWSANOVAS.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   60.0    76.0    77.0    77.4    79.0    84.0 
+
+Call:
+lm(formula = Wing ~ Sex.1, data = d1)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-16.0961  -1.0961  -0.0961   1.3683   5.3683 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 76.09611    0.07175 1060.50   <2e-16 ***
+Sex.1male    2.53562    0.09998   25.36   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘
+**********************************************************************
+
+Encountered error:
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+======================================================================
+Inspecting script file Day1sws.R...
+
+File contents are:
+**********************************************************************
+d<-read.table("../Data/SparrowSize.txt", header=TRUE) 	
+str(d) 	
+
+mean(d$Tarsus)
+median(d$Tarsus)
+mode(d$Tarsus)
+
+hist(d$Tarsus)
+
+par(mfrow = c(2,2))
+hist(d$Tarsus, breaks = 3, col = "grey")
+hist(d$Tarsus, breaks = 10, col = "grey")
+hist(d$Tarsus, breaks = 30, col = "grey")
+hist(d$Tarsus, breaks = 100, col = "grey")
+
+d2 <- subset(d, d$Tarsus!= "NA")
+length(d$Tarsus)
+ 
+require(modeest)
+mlv(d$Tarsus)
+mlv(d2$Tarsus)
+
+mlv.default(x=d2$Tarsus)
+
+sd(d2$Tarsus)
+
+range(d$Tarsus)
+range(d$Tarsus, na.rm = TRUE)
+
+var(d$Tarsus, na.rm = TRUE)
+
+sum((d2$Tarsus - mean(d2$Tarsus))^2)/(length(d2$Tarsus) - 1) 	
+
+sqrt(var(d2$Tarsus)) 	
+
+zTarsus <- (d2$Tarsus - mean(d2$Tarsus))/sd(d2$Tarsus)
+
+var(zTarsus)
+
+graphics.off()
+hist(zTarsus)
+
+pnorm(zTarsus)
+
+set.seed(123) 	
+znormal <- rnorm(1e+06) 	
+hist(znormal, breaks = 100) 	
+
+summary(znormal)
+
+qnorm(c(0.025, 0.975))
+pnorm(.Last.value)
+
+
+
+#Homework!
+Bill_mean = mean(d$Bill, na.rm = TRUE)
+Bill_var = var(d$Bill, na.rm = TRUE) 
+Bill_sd = sd(d$Bill, na.rm = TRUE)
+mass_mean = mean(d$Mass, na.rm = TRUE)
+mass_var = var(d$Mass, na.rm = TRUE)
+mass_sd = sd(d$Mass, na.rm = TRUE)
+wing_mean = mean(d$Wing, na.rm = TRUE)
+wing_var = var(d$Wing, na.rm = TRUE) 
+wing_sd = sd(d$Wing, na.rm = TRUE)
+#can just use scale! much easier! Even removes the NAs automatically for you
+
+scale(d$Bill)
+scale(d$Mass)
+scale(d$Wing)
+
+
+graphics.off()
+par(mfrow = c(1, 2)) 	
+hist(znormal, breaks = 100) 	
+abline(v = qnorm(c(0.25, 0.5, 0.75)), lwd = 2) 	
+abline(v = qnorm(c(0.025, 0.975)), lwd = 2, lty = "dashed") 	
+plot(density(znormal)) 	
+abline(v = qnorm(c(0.25, 0.5, 0.75)), col = "gray") 	
+abline(v = qnorm(c(0.025, 0.975)), lty = "dotted", col = "black") 	
+abline(h = 0, lwd = 3, col = "blue") 	
+text(2, 0.3, "1.96", col = "red", adj = 0) 	
+text(-2, 0.3, "-1.96", col = "red", adj = 1) 	
+
+
+boxplot(d$Tarsus~d$Sex.1, col = c("red", "blue"), ylab="Tarsus length (mm)")
+**********************************************************************
+
+Testing Day1sws.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+'data.frame':	1770 obs. of  8 variables:
+ $ BirdID: int  1 2 2 2 2 2 2 2 2 2 ...
+ $ Year  : int  2002 2001 2002 2003 2004 2004 2004 2004 2004 2005 ...
+ $ Tarsus: num  16.9 16.8 17.2 17.5 17.8 ...
+ $ Bill  : num  NA NA NA 13.5 13.4 ...
+ $ Wing  : num  76 76 76 76 77 78 77 77 77 77 ...
+ $ Mass  : num  23.6 27.5 28.1 27.8 26.5 ...
+ $ Sex   : int  0 1 1 1 1 1 1 1 1 1 ...
+ $ Sex.1 : Factor w/ 2 levels "female","male": 1 2 2 2 2 2 2 2 2 2 ...
+[1] NA
+[1] NA
+[1] "numeric"
+[1] 1770
+
+**********************************************************************
+
+Encountered error:
+Loading required package: modeest
+Warning message:
+In library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE,  :
+  there is no package called ‘modeest’
+Error: could not find function "mlv"
+Execution halted
+
+======================================================================
+Inspecting script file SWS15.R...
+
+File contents are:
+**********************************************************************
+rm(list=ls()) 	
+
+daphnia  <-  read.delim("../Data/daphnia.txt") 	
+
+summary(daphnia) 	
+
+par(mfrow  =  c(1,  2)) 	
+#Testing for outliers
+plot(Growth.rate  ~  Detergent,  data  =  daphnia) 	
+plot(Growth.rate  ~  Daphnia,  data  =  daphnia) 
+
+require(dplyr) # for piping
+
+daphnia  %>%   	
+  group_by(Detergent)  %>% 	
+  summarise  (variance=var(Growth.rate)) 	
+daphnia  %>%   	
+  group_by(Daphnia)  %>% 	
+  summarise  (variance=var(Growth.rate)) 	
+
+#Modelling daphnia
+seFun  <- function(x)  { 	
+  sqrt(var(x)/length(x)) 	# standard error funct
+} 	
+
+detergentMean  <-  with(daphnia,  tapply(Growth.rate,  INDEX  =  Detergent, FUN  =  mean)) 	
+
+detergentSEM  <-  with(daphnia,  tapply(Growth.rate,  INDEX  =  Detergent, FUN  =  seFun)) 	
+
+cloneMean  <- with(daphnia,  tapply(Growth.rate,  INDEX  =  Daphnia,  FUN  =  mean)) 	
+
+cloneSEM  <- with(daphnia,  tapply(Growth.rate,  INDEX  =  Daphnia,  FUN  =  seFun)) 	
+
+
+#plotting and changing margins
+par(mfrow=c(2,1),mar=c(4,4,1,1)) 	
+
+barMids  <-  barplot(detergentMean,  xlab  =  "Detergent  type",  ylab  =  "Population  
+growth  rate", ylim  =  c(0,  5)) 	
+
+arrows(barMids,  detergentMean - detergentSEM,  barMids,  detergentMean  +  detergentSEM,  code  =  3,  angle  =  90) 	
+
+barMids  <-  barplot(cloneMean,  xlab  =  "Daphnia  clone",  ylab  =  "Population  
+growth  rate",  ylim  =  c(0,  5)) 	
+
+arrows(barMids,  cloneMean - cloneSEM,  barMids,  cloneMean  +  cloneSEM, code  =  3,  angle  =  90) 	
+daphniaMod  <-  lm(Growth.rate  ~  Detergent  +  Daphnia,  data  =  daphnia) 	
+
+anova(daphniaMod) 	
+
+**********************************************************************
+
+Testing SWS15.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+  Growth.rate     Water     Detergent    Daphnia  
+ Min.   :1.762   Tyne:36   BrandA:18   Clone1:24  
+ 1st Qu.:2.797   Wear:36   BrandB:18   Clone2:24  
+ Median :3.788             BrandC:18   Clone3:24  
+ Mean   :3.852             BrandD:18              
+ 3rd Qu.:4.807                                    
+ Max.   :6.918                                    
+# A tibble: 4 × 2
+  Detergent variance
+     <fctr>    <dbl>
+1    BrandA 1.511245
+2    BrandB 1.089727
+3    BrandC 1.779843
+4    BrandD 2.380693
+**********************************************************************
+
+Encountered error:
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+======================================================================
+Inspecting script file Day2sws.R...
+
+File contents are:
+**********************************************************************
+# Stats with sparrows - day 2
+
+#mean is equal to variance in Poisson distribution (Count data)
+
+#Mean != variance in negative binomial (count data)
+
+#Parametric tests are for numeric data i.e. continuous, discrete, count. Also have to be norm. distributed. Have a better significance if correctly used
+
+#Non-para for categorical data i.e. Ranked, nominal
+rm(list = ls())
+
+sparrow = read.table("../Data/SparrowSize.txt", header=TRUE)
+str(sparrow)
+dplyr::tbl_df(sparrow)
+
+graphics.off()
+par(mfrow = c(2,2))
+hist(sparrow$Mass)
+hist(sparrow$Tarsus)
+hist(sparrow$Bill)
+hist(sparrow$Wing)
+d <- density(sparrow$Mass, na.rm = TRUE)
+graphics.off()
+plot(d)
+
+graphics.off()
+par(mfrow=c(1,2))
+x = sample(sparrow$Mass, 300)
+#normal fit
+qqnorm(x);qqline(x)
+qqplot(sparrow$Mass, x,main= "t(3) Q-Q Plot", ylab = "Sample Quantiles")
+abline(0,1)
+
+#sws lecture 4
+
+rm(list=ls())
+graphics.off()
+
+d = read.table("../Data/SparrowSize.txt", header=TRUE)
+
+Bill_mean = mean(d$Bill, na.rm = TRUE)
+Bill_var = var(d$Bill, na.rm = TRUE) 
+Bill_sd = sd(d$Bill, na.rm = TRUE)
+mass_mean = mean(d$Mass, na.rm = TRUE)
+mass_var = var(d$Mass, na.rm = TRUE)
+mass_sd = sd(d$Mass, na.rm = TRUE)
+wing_mean = mean(d$Wing, na.rm = TRUE)
+wing_var = var(d$Wing, na.rm = TRUE) 
+wing_sd = sd(d$Wing, na.rm = TRUE)
+
+d2 = subset(d, d!= "NA")
+
+#calculating standard error
+Bill_se = Bill_sd/sqrt(length(d2$Bill))
+Mass_se = mass_sd/sqrt(length(d2$Mass))
+Wing_se = wing_sd/sqrt(length(d2$Wing))
+
+#calcuating standard error for subset
+d1 <- subset(d2, d2$Year==2001)
+
+Bill_se_2001 = Bill_sd/sqrt(length(d1$Bill))
+Mass_se_2001 = mass_sd/sqrt(length(d1$Mass))
+Wing_se_2001 = wing_sd/sqrt(length(d1$Wing))
+
+#calculating 95%CI
+qnorm(c(0.025,0.975))
+CI_Bill = c((Bill_mean -(Bill_se*1.96)), (Bill_mean + (Bill_se*1.96)))
+CI_Mass = c((mass_mean -(Mass_se*1.96)), (mass_mean + (Mass_se*1.96)))
+CI_Wing = c((wing_mean -(Wing_se*1.96)), (wing_mean + (Wing_se*1.96)))
+CI_Bill
+CI_Mass
+CI_Wing
+
+
+# sws lecture 5
+
+rm(list = ls())
+graphics.off()
+
+#Accept or relect H0
+N_Tarsus = 1685
+SE_Tarsus = 0.02
+Mean_Tarsus = 18.52
+N_T_2001 = 168
+SE_T_2001 = 0.07
+Mean_T_2001 = 18.19
+
+CI_T_2001 = c(Mean_T_2001 - (1.96 * SE_T_2001), Mean_T_2001 + (1.96 * SE_T_2001))
+
+CI_T_2001
+# reject H0
+
+#T Test!
+  
+df = 167 # no. of observations - 1
+
+#True mean is = 18.5 H0
+
+TM = 18.5
+
+T_result = (Mean_T_2001 - TM)/ SE_T_2001
+
+p_value = 2*pt(-abs(T_result), 167)
+p_value
+
+sparrow = read.table("../Data/SparrowSize.txt", header=TRUE)
+
+d1<- subset(sparrow, sparrow$Year==2001)
+t.test(d1$Tarsus, mu=18.5, na.rm = TRUE)
+
+#Male and female mean not equal
+t.test(sparrow$Tarsus ~sparrow$Sex, na.rm = TRUE)
+
+
+#HO 5
+
+wing_length_differ = t.test(d1$Wing, mu = mean(sparrow$Wing, na.rm = TRUE), na.rm = TRUE)
+
+wing_length_differ
+
+wing_length_mf = t.test(d1$Wing ~ d1$Sex, na.rm = TRUE)
+
+wing_length_mf
+
+wing_length_mf_full = t.test(sparrow$Wing~ sparrow$Sex, na.rm = TRUE)
+
+wing_length_mf_full
+
+#sws6
+
+rm(list = ls())
+
+graphics.off()
+
+# DoF effects 
+
+#Type 1 (effect does not exist, but test says it does) and Type 2 (no effect detected, but one does exist) errors
+
+
+### 5% chance of detecting an 
+### effect that does not exist (T1)
+
+#Type  II effects depend  on  statisticalpower . The bigger  the sample size, the smaller the chance for type II errors
+
+library(pwr)
+pwr.t.test(d=(0-0.05)/0.96, power = .8, sig.level = 0.05, type = "two.sample", alternative = "two.sided")
+
+#sws - pdf 4
+rm(list=ls()) 	
+
+d <- read.table("../Data/SparrowSize.txt",  header=TRUE) 	
+
+d1 <- subset(d,  d$Tarsus!="NA") 	
+
+seTarsus <- sqrt(var(d1$Tarsus)/length(d1$Tarsus)) 	
+
+seTarsus 	
+
+d12001<- subset(d1,  d1$Year==2001) 	
+
+seTarsus2001<- sqrt(var(d12001$Tarsus)/length(d12001$Tarsus)) 	
+
+seTarsus2001 	
+
+
+# pdf 5 - Hypothesis testing
+
+boxplot(d$Mass~d$Sex.1,  col  =  c("red",  "blue"),  ylab="Body  mass  (g)") 	
+
+#Is this plot showing significant results?
+t.test1  <-  t.test(d$Mass~d$Sex.1) 	
+
+t.test1 	
+
+
+
+**********************************************************************
+
+Testing Day2sws.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+'data.frame':	1770 obs. of  8 variables:
+ $ BirdID: int  1 2 2 2 2 2 2 2 2 2 ...
+ $ Year  : int  2002 2001 2002 2003 2004 2004 2004 2004 2004 2005 ...
+ $ Tarsus: num  16.9 16.8 17.2 17.5 17.8 ...
+ $ Bill  : num  NA NA NA 13.5 13.4 ...
+ $ Wing  : num  76 76 76 76 77 78 77 77 77 77 ...
+ $ Mass  : num  23.6 27.5 28.1 27.8 26.5 ...
+ $ Sex   : int  0 1 1 1 1 1 1 1 1 1 ...
+ $ Sex.1 : Factor w/ 2 levels "female","male": 1 2 2 2 2 2 2 2 2 2 ...
+# A tibble: 1,770 × 8
+   BirdID  Year Tarsus  Bill  Wing  M
+**********************************************************************
+
+Encountered error:
+Error in library(pwr) : there is no package called ‘pwr’
+Execution halted
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 5 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Marks for the Week = 98.5
+
+NOTE THAT THESE ARE NOT THE FINAL MARKS FOR THE WEEK, BUT AN UPPER BOUND ON THE MARKS!
