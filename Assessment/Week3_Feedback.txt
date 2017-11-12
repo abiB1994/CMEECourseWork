@@ -1,0 +1,1740 @@
+Starting weekly assessment for Abigail, Week3
+
+Current Marks = 100
+
+Note that: 
+(1) Major sections begin with a double "====" line 
+(2) Subsections begin with a single "====" line 
+(3) Code output or text file content are printed within single "*****" lines 
+
+======================================================================
+======================================================================
+Your Git repo size this week is about 8.00 MiB on disk 
+
+PART 1: Checking project workflow...
+
+Found the following directories in parent directory: Week6, Week1, Assessment, Week2, Week4, .git, Week3, Project, Genomics_Week, GIS_Week
+
+Found the following files in parent directory: README.txt, .gitignore
+
+Checking for key files in parent directory...
+
+Found .gitignore in parent directory, great! 
+
+Printing contents of .gitignore:
+**********************************************************************
+*~ 
+*.tmp
+*.RData 
+*.Rhistory
+*.tif 
+*.shp 
+*.shx 
+*.cpg 
+*.dbf 
+*.prj 
+GIS_Week/Lectures/ 
+GIS_Week/SpatialMethods/ 
+GIS_Week/MAXENT_practical/
+Genomics_Week/bin/
+
+**********************************************************************
+
+Found README in parent directory, named: README.txt
+
+Printing contents of README.txt:
+**********************************************************************
+ My CMEE Coursework Repository 
+.
+├── Assessment
+│   ├── Week1_Feedback.txt
+│   └── Week2_Feedback.txt
+├── Project
+│   └── Pro_proposal.txt
+├── README.txt
+├── temporary.tmp
+├── Week1
+│   ├── Code
+│   │   ├── boilerplate.sh
+│   │   ├── CompileLaTeX.sh
+│   │   ├── ConcatenateTwoFiles.sh
+│   │   ├── CountLines.sh
+│   │   ├── csvtospace.sh
+│   │   ├── FirstBiblio.bib
+│   │   ├── FirstExample.tex
+│   │   ├── MyExampleScript.sh
+│   │   ├── tabtocsv.sh
+│   │   ├── UnixPract1.txt
+│   │   └── variables.sh
+│   ├── Data
+│   │   ├── 407228326.fasta
+│   │   ├── 407228412.fasta
+│   │   └── E.coli.fasta
+│   ├── README.txt
+│   └── Sandbox
+│       ├── Data
+│       │   ├── spawannxs.txt
+│       │   └── TestFind
+│       │       ├── Dir1
+│       │       │   ├── Dir11
+│       │       │   │   └── Dir111
+│       │       │   │       └── File111.txt
+│       │       │   ├── File1.csv
+│       │       │   ├── File1.tex
+│       │       │   └── File1.txt
+│       │       ├── Dir2
+│       │       │   ├── file2.csv
+│       │       │   ├── file2.tex
+│       │       │   └── File2.txt
+│       │       └── Dir3
+│       │           └── File3.txt
+│       ├── ListRootDir.txt
+│       ├── test.txt
+│       └── TestWild
+│           ├── Anotherfile.csv
+│           ├── Anotherfile.txt
+│           ├── File1.csv
+│           ├── File1txt
+│           ├── File1.txt
+│           ├── File2.csv
+│           ├── File2.txt
+│           ├── File3.csv
+│           ├── File3.txt
+│           ├── File4.csv
+│           └── File4.txt
+├── Week2
+│   ├── Code
+│   │   ├── align_seqs.py
+│   │   ├── basic_csv.py
+│   │   ├── basic_io.py
+│   │   ├── blackbirds.py
+│   │   ├── boilerplate.py
+│   │   ├── cfexercises.py
+│   │   ├── control_flow.py
+│   │   ├── debugme.py
+│   │   ├── dictionary.py
+│   │   ├── DNA.csv
+│   │   ├── DrawFW.py
+│   │   ├── lc1.py
+│   │   ├── lc2.py
+│   │   ├── loops.py
+│   │   ├── LV1.py
+│   │   ├── LV2.py
+│   │   ├── My_best.txt
+│   │   ├── nets.py
+│   │   ├── Nets.R
+│   │   ├── oaks.py
+│   │   ├── profileme.py
+│   │   ├── regexs.py
+│   │   ├── running_LV.sh
+│   │   ├── scope.py
+│   │   ├── sql2.py
+│   │   ├── sql.py
+│   │   ├── sysargv.py
+│   │   ├── test_control_flow.py
+│   │   ├── texput.log
+│   │   ├── timeitme.py
+│   │   ├── TraitInfo
+│   │   ├── tuple.py
+│   │   ├── using_name.py
+│   │   └── using_os.py
+│   ├── Data
+│   │   ├── blackbirds.txt
+│   │   ├── QMEE_Net_Mat_edges.csv
+│   │   ├── QMEE_Net_Mat_nodes.csv
+│   │   └── TestOaksData.csv
+│   ├── README.txt
+│   ├── Results
+│   │   └── output.log
+│   └── Sandbox
+│       ├── bodymass.csv
+│       ├── testcsv.csv
+│       └── test.txt
+├── Week3
+│   ├── Code
+│   │   ├── apply1.R
+│   │   ├── apply2.R
+│   │   ├── basic_io.R
+│   │   ├── Bin_width.R
+│   │   ├── boilerplate.R
+│   │   ├── browse.R
+│   │   ├── case_study1.R
+│   │   ├── case_study2.R
+│   │   ├── case_study3.R
+│   │   ├── get_TreeHeight.py
+│   │   ├── get_TreeHeight.R
+│   │   ├── Makefile
+│   │   ├── Multi-f-plots.R
+│   │   ├── MyResults.Rout
+│   │   ├── next.R
+│   │   ├── PP_Lattice.R
+│   │   ├── PP_Regress.R
+│   │   ├── Pub_ready_ggplot.R
+│   │   ├── Ricker.R
+│   │   ├── run_get_TreeHeight.sh
+│   │   ├── sample.R
+│   │   ├── tapply.R
+│   │   ├── TAutoCorr1.pdf
+│   │   ├── TAutoCorr.R
+│   │   ├── TAutoCorr.tex
+│   │   ├── TreeHeight.R
+│   │   ├── Try.R
+│   │   ├── var_geoms.R
+│   │   ├── Vectorize1.R
+│   │   └── Vectorize2.R
+│   ├── Data
+│   │   ├── EcolArchives-E089-51-D1.csv
+│   │   ├── KeyWestAnnualMeanTemperature.RData
+│   │   ├── PoundHillData.csv
+│   │   ├── PoundHillMetaData.csv
+│   │   ├── Results.txt
+│   │   └── trees.csv
+│   ├── README.txt
+│   ├── Results
+│   └── Sandbox
+│       ├── trycatch.R
+│       └── Vectorize2.R
+├── Week4
+│   ├── Code
+│   │   ├── Day1sws.R
+│   │   ├── Day2sws.R
+│   │   ├── Day3_4sws.R
+│   │   └── SWS15.R
+│   ├── Data
+│   │   ├── daphnia.txt
+│   │   └── SparrowSize.txt
+│   └── Results
+├── Week5
+│   └── Code
+│       ├── GIS_concepts.txt
+│       └── remote_sensing.txt
+└── Week6
+    ├── Code
+    │   ├── TestR.py
+    │   └── TestR.R
+    ├── Data
+    ├── Results
+    └── Sandbox
+
+35 directories, 134 files
+**********************************************************************
+
+======================================================================
+Looking for the weekly directories...
+
+Found 7 weekly directories: GIS_Week, Genomics_Week, Week1, Week2, Week3, Week4, Week6
+
+The Week3 directory will be assessed 
+
+======================================================================
+======================================================================
+PART 2: Checking weekly code and workflow...
+
+======================================================================
+Assessing WEEK3...
+
+Found the following directories: Code, Data, Sandbox
+
+Found the following files: README.txt
+
+Checking for readme file in weekly directory...
+
+Found README in parent directory, named: README.txt
+
+Printing contents of README.txt:
+**********************************************************************
+.
+├── Code
+│   ├── apply1.R
+│   ├── apply2.R
+│   ├── basic_io.R
+│   ├── Bin_width.R
+│   ├── boilerplate.R
+│   ├── browse.R
+│   ├── case_study1.R
+│   ├── case_study2.R
+│   ├── case_study3.R
+│   ├── get_TreeHeight.py
+│   ├── get_TreeHeight.R
+│   ├── Makefile
+│   ├── Multi-f-plots.R
+│   ├── MyResults.Rout
+│   ├── next.R
+│   ├── PP_Lattice.R
+│   ├── PP_Regress.R
+│   ├── Pub_ready_ggplot.R
+│   ├── Ricker.R
+│   ├── run_get_TreeHeight.sh
+│   ├── sample.R
+│   ├── tapply.R
+│   ├── TAutoCorr1.pdf
+│   ├── TAutoCorr.R
+│   ├── TAutoCorr.tex
+│   ├── TreeHeight.R
+│   ├── Try.R
+│   ├── var_geoms.R
+│   ├── Vectorize1.R
+│   └── Vectorize2.R
+├── Data
+│   ├── EcolArchives-E089-51-D1.csv
+│   ├── KeyWestAnnualMeanTemperature.RData
+│   ├── PoundHillData.csv
+│   ├── PoundHillMetaData.csv
+│   ├── Results.txt
+│   └── trees.csv
+├── README.txt
+├── Results
+└── Sandbox
+    ├── trycatch.R
+    └── Vectorize2.R
+
+4 directories, 39 files
+**********************************************************************
+
+Results directory missing!
+
+Found 27 code files: browse.R, PP_Regress.R, apply1.R, var_geoms.R, Pub_ready_ggplot.R, sample.R, run_get_TreeHeight.sh, get_TreeHeight.py, boilerplate.R, case_study3.R, Multi-f-plots.R, TreeHeight.R, PP_Lattice.R, next.R, Bin_width.R, Ricker.R, Vectorize1.R, tapply.R, basic_io.R, Try.R, apply2.R, get_TreeHeight.R, TAutoCorr.R, case_study1.R, Vectorize2.R, TAutoCorr.tex, case_study2.R
+
+Found the following extra files: Rplots.pdf, MyResults.Rout, Makefile, TAutoCorr1.pdf, .RData
+0.5 pt deducted per extra file
+
+Current Marks = 97.5
+
+======================================================================
+Testing script/code files...
+
+======================================================================
+Inspecting script file browse.R...
+
+File contents are:
+**********************************************************************
+Exponential <- function(N0 = 1, r = 1, generations = 10){
+  # Runs a simulation of exponential growth
+  # Returns a vector of length generations
+  N <- rep(NA, generations)
+  # Creates a vector of NA
+  N[1] <- N0
+  for (t in 2:generations){
+    N[t] <- N[t-1] * exp(r)
+    # browser()
+  }
+  return (N)
+}
+plot(Exponential(), type="l", main="Exponential growth")**********************************************************************
+
+Testing browse.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.11199s
+
+======================================================================
+Inspecting script file PP_Regress.R...
+
+File contents are:
+**********************************************************************
+#!/usr/bin/env Rscript
+
+MyDF <- read.csv("../Data/EcolArchives-E089-51-D1.csv") # loading in data
+library(ggplot2)  #loading required packages
+library(plyr)
+library(data.table)
+
+#Some mass values in mg, so looping through prey mass to convert them
+l = length(MyDF$Prey.mass)
+for (i in 1:l){
+  if (MyDF$Prey.mass.unit[i] == "mg") {
+    MyDF$Prey.mass[i] = MyDF$Prey.mass[i] / 1000
+    MyDF$Prey.mass.unit[i] = "g"
+  }
+}
+
+graph_pp <- ggplot(MyDF, aes(x = Prey.mass, y = Predator.mass, col = Predator.lifestage)) + geom_point(shape = 3) + geom_smooth(method = 'lm', fullrange = TRUE) + facet_grid(Type.of.feeding.interaction ~ .) + scale_y_continuous(trans = "log10") + scale_x_continuous(trans = "log10") + xlab("Prey Mass in grams") + ylab("Predator Mass in grams") + theme_bw() + theme(legend.position="bottom")+ coord_fixed(ratio = 0.3)+ guides(color = guide_legend(nrow=1)) #Creating the correct graph
+
+
+pdf("../Results/PP_Regress.pdf", 11.7, 8.3) # Preparing to save the graph
+print(graph_pp)
+
+dev.off()
+
+# take logs of the two mass columns for later use
+
+MyDF[["Predator.mass"]] = log(MyDF$Predator.mass)
+MyDF[["Prey.mass"]] = log(MyDF$Prey.mass)
+
+# Fail 1
+
+# set.seed(1)
+# 
+# dt <- data.table(MyDF,key="Type.of.feeding.interaction")
+# 
+# fits <- lapply(unique(MyDF$Type.of.feeding.interaction),
+#               function(z)lm(Prey.mass ~ Predator.lifestage + Type.of.feeding.interaction, data=dt, y=T))
+# 
+# sapply(fits, coef)
+# 
+# out <- capture.output(sapply(fits, coef), sapply(fits,function(x)c(se=summary(x)$sigma, rsq=summary(x)$r.squared)),sapply(fits, function(x)(summary(x)$fstatistic)),sapply(fits, function(x)c(pf(summary(x)$fstatistic[1],summary(x)$fstatistic[2],summary(x)$fstatistic[3],lower.tail=FALSE))), file="../Results/PP_Regress_Results.csv")
+# 
+# Nicer output, but I don't think it produces everything the practical asks for?
+# model1<- lm(Predator.mass ~ Type.of.feeding.interaction + Predator.lifestage,  data=MyDF)
+# anova(model1)
+# 
+# model2 <- lm(Prey.mass ~ Type.of.feeding.interaction + Predator.lifestage,  data=MyDF)
+# anova(model2)
+# 
+# out <- capture.output(anova(model1), summary(model1), anova(model2), summary(model2), file="../Results/PP_Regress_Results.csv")
+
+#Fail two 
+
+
+# #Or maybe this?
+# df_lm <- MyDF %>%     #piping . Getting datframe
+#   group_by(Predator.lifestage,Type.of.feeding.interaction) %>%    #and then grouping it by pl and tofi
+#   do(mod = lm(Predator.mass ~ Prey.mass, data = .))     #and then modelling pred mass by prey mass with above as factors
+
+li_lm <- dlply(MyDF, .(Type.of.feeding.interaction,Predator.lifestage), function(x) lm(Predator.mass~Prey.mass, data=x)) #splitting df by tofi and pl
+
+
+df_coef <- ldply(li_lm, function(x) {   #using plyr as nothing else
+intercept = summary(x)$coefficients[1]#cretes a final usable format!
+slope = summary(x)$coefficients[2]  #creating columns for r_sq, p_val etc
+r_sq = summary(x)$r.squared
+p.value = summary(x)$coefficients[8]
+data.frame(intercept, slope, r_sq,p.value)}
+)
+  
+
+
+f.stat = ldply(li_lm, function(x) { f.statistic = summary(x)$fstatistic[1]
+data.frame(f.statistic)}) #F-stat was done seperately as it's not known until the model is run? Either way it's appended on at the end
+
+
+regression = merge(df_coef, f.stat,  all=T) #merging
+
+write.csv(regression, file = "../Results/PP_Regress_Results.csv") # saving
+
+
+**********************************************************************
+
+Testing PP_Regress.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Error in pdf("../Results/PP_Regress.pdf", 11.7, 8.3) : 
+  cannot open file '../Results/PP_Regress.pdf'
+Execution halted
+
+======================================================================
+Inspecting script file apply1.R...
+
+File contents are:
+**********************************************************************
+## apply:applying the same function to rows/columns of a matrix
+
+## Build a random matrix
+M <- matrix(rnorm(100), 10, 10)
+print (M)
+
+## Take the mean of each row
+RowMeans <- apply(M, 1, mean)
+print (RowMeans)
+
+## Now the variance
+RowVars <- apply(M, 1, var)
+print (RowVars)
+
+## By column
+ColMeans <- apply(M, 2, mean)
+print (ColMeans)
+**********************************************************************
+
+Testing apply1.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+              [,1]       [,2]        [,3]        [,4]        [,5]       [,6]
+ [1,] -0.623474604  2.4209418 -0.77805050 -0.18901338  0.04481229  0.6847273
+ [2,] -0.099039311  0.7100863  0.11421738 -1.57840727 -1.56510360  0.9618313
+ [3,]  0.186076831 -0.7707983  0.45464709  0.96593777 -0.70182338 -1.4324498
+ [4,] -1.328175426 -0.7815323  0.07974729  0.06697997 -0.67401885 -0.9494620
+ [5,] -0.933102782  0.3094493 -0.64513677 -0.34641213 -1.20141981 -1.1506312
+ [6,] -1.430360393  0.5490361  0.014537
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.07077s
+
+======================================================================
+Inspecting script file var_geoms.R...
+
+File contents are:
+**********************************************************************
+# load the package
+require(ggplot2)
+# load the data
+MyDF <- as.data.frame(
+  read.csv("../Data/EcolArchives-E089-51-D1.csv"))
+# barplot
+qplot(Predator.lifestage,
+      data = MyDF, geom = "bar")
+# boxplot
+qplot(Predator.lifestage, log(Prey.mass),
+      data = MyDF, geom = "boxplot")
+# density
+qplot(log(Predator.mass),
+      data = MyDF, geom = "density")
+# histogram
+qplot(log(Predator.mass),
+      data = MyDF, geom = "histogram")
+# scatterplot
+qplot(log(Predator.mass), log(Prey.mass),
+      data = MyDF, geom = "point")
+# smooth
+qplot(log(Predator.mass), log(Prey.mass),
+      data = MyDF, geom = "smooth")
+qplot(log(Predator.mass), log(Prey.mass),
+      data = MyDF, geom = "smooth", method = "lm")
+**********************************************************************
+
+Testing var_geoms.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Loading required package: ggplot2
+`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+`geom_smooth()` using method = 'gam'
+
+======================================================================
+Inspecting script file Pub_ready_ggplot.R...
+
+File contents are:
+**********************************************************************
+rm(list=ls())
+library(ggplot2)
+MyDF <- read.csv("../Data/EcolArchives-E089-51-D1.csv") # loading in data
+#ggplot
+
+qplot(log(Prey.mass), log(Predator.mass),
+      data = MyDF, colour = I("red"))
+qplot(log(Prey.mass), log(Predator.mass),
+      data = MyDF, size = 3) #with ggplot size mapping
+qplot(log(Prey.mass), log(Predator.mass),
+      data = MyDF, size = I(3))
+
+#semi transparancy - alpha
+qplot(log(Prey.mass), log(Predator.mass), data = MyDF,
+      colour = Type.of.feeding.interaction, alpha = I(.5))
+
+#adding a smoother to the point
+qplot(log(Prey.mass), log(Predator.mass), data = MyDF, geom = c("point","smooth"))
+
+qplot(log(Prey.mass), log(Predator.mass), data = MyDF,
+      geom = c("point", "smooth")) + geom_smooth(method = "lm")
+
+#adding smoother for each type of interaction
+qplot(log(Prey.mass), log(Predator.mass), data = MyDF,
+    geom = c("point", "smooth"), colour = Type.of.feeding.interaction)
+    + geom_smooth(method = "lm", fullrange = TRUE)
+
+#ratio of prey-pred according to type of interaction
+qplot(Type.of.feeding.interaction, log(Prey.mass/Predator.mass), data = MyDF)
+
+#added jitter
+qplot(Type.of.feeding.interaction, log(Prey.mass/Predator.mass), data = MyDF, geom = "jitter")
+
+#boxplots
+qplot(Type.of.feeding.interaction,
+      log(Prey.mass/Predator.mass), data = MyDF,
+      geom = "boxplot")
+
+qplot(log(Prey.mass/Predator.mass), data = MyDF, geom = "histogram", binwidth = 2, bins = 20)
+
+qplot(log(Prey.mass/Predator.mass), data = MyDF,
+      geom = "histogram",
+      fill = Type.of.feeding.interaction)
+
+qplot(log(Prey.mass/Predator.mass), data = MyDF,
+      geom = "histogram",
+      fill = Type.of.feeding.interaction,
+      binwidth = 1)
+
+#Density transparent
+qplot(log(Prey.mass/Predator.mass), data = MyDF,
+      geom = "density", fill = Type.of.feeding.interaction, alpha =
+        I(0.5))
+#colour = draws only the edge of the curve
+qplot(log(Prey.mass/Predator.mass), data = MyDF,
+      geom = "density", colour = Type.of.feeding.interaction)
+
+
+
+
+
+
+
+
+
+
+
+**********************************************************************
+
+Testing Pub_ready_ggplot.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+`geom_smooth()` using method = 'gam'
+`geom_smooth()` using method = 'gam'
+`geom_smooth()` using method = 'gam'
+Error in +geom_smooth(method = "lm", fullrange = TRUE) : 
+  invalid argument to unary operator
+Execution halted
+
+======================================================================
+Inspecting script file sample.R...
+
+File contents are:
+**********************************************************************
+## run a simulation that involves sampling from a population
+x <- rnorm(50) #Generate your population
+doit <- function(x){
+  x <- sample(x, replace = TRUE)
+  if(length(unique(x)) > 30) { #only take mean if sample was sufficient
+    print(paste("Mean of this sample was:", as.character(mean(x))))
+  }
+}
+
+## Run 100 iterations using vectorization:
+result <- lapply(1:100, function(i) doit(x))
+
+##Or using a for loop:
+result <- vector("list", 100) #Preallocate/Initialize
+for(i in 1:100) {
+  result[[i]] <- doit(x)
+}
+
+print (i)
+print (result)
+**********************************************************************
+
+Testing sample.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+[1] "Mean of this sample was: -0.178396456349125"
+[1] "Mean of this sample was: -0.393448172056946"
+[1] "Mean of this sample was: -0.387343498088024"
+[1] "Mean of this sample was: -0.506025136259299"
+[1] "Mean of this sample was: -0.261482038599088"
+[1] "Mean of this sample was: -0.372358496364309"
+[1] "Mean of this sample was: -0.42314088609394"
+[1] "Mean of this sample was: -0.397758719510679"
+[1] "Mean of this sample was: -0.136898872097283"
+[1] "Mean of this sample was: -0.198117259491293"
+[1
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.07816s
+
+======================================================================
+Inspecting script file run_get_TreeHeight.sh...
+
+File contents are:
+**********************************************************************
+#Unix command test for get_TreeHeight.R
+
+Rscript get_TreeHeight.R ../Data/trees.csv
+
+python get_TreeHeight.py ../Data/trees.csv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**********************************************************************
+
+Testing run_get_TreeHeight.sh...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+  [1] "Tree height is: 27.8"  "Tree height is: 45.25" "Tree height is: 14.67"
+  [4] "Tree height is: 14.93" "Tree height is: 35.97" "Tree height is: 32.41"
+  [7] "Tree height is: 17.46" "Tree height is: 30.14" "Tree height is: 20.31"
+ [10] "Tree height is: 24.43" "Tree height is: 27.5"  "Tree height is: 25.16"
+ [13] "Tree height is: 29.39" "Tree height is: 28.19" "Tree height is: 30.74"
+ [16] "Tree height is: 39.74" "Tree height is: 24.69" "Tree height is: 17.76"
+ [19] "Tree height is: 20.82" "Tr
+**********************************************************************
+
+Encountered error:
+Loading required package: stringr
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> write.table -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file '../Results/trees_treeheights.csv': No such file or directory
+Execution halted
+Traceback (most recent call last):
+  File "get_TreeHeight.py", line 48, in <module>
+    status = main(sys.argv)
+  File "get_TreeHeight.py", line 44, in main
+    savedata(MyData,argv[1])
+  File "get_TreeHeight.py", line 38, in savedata
+    data.to_csv(outfilepath)
+  File "/home/mhasoba/.conda/envs/py27/lib/python2.7/site-packages/pandas/core/frame.py", line 1403, in to_csv
+    formatter.save()
+  File "/home/mhasoba/.conda/envs/py27/lib/python2.7/site-packages/pandas/io/formats/format.py", line 1577, in save
+    compression=self.compression)
+  File "/home/mhasoba/.conda/envs/py27/lib/python2.7/site-packages/pandas/io/common.py", line 379, in _get_handle
+    f = open(path_or_buf, mode)
+IOError: [Errno 2] No such file or directory: '../Results/trees_get_TreeHeight.csv'
+
+======================================================================
+Inspecting script file get_TreeHeight.py...
+
+File contents are:
+**********************************************************************
+#!/usr/bin/env python
+
+__author__ = "Abi Baines a.baines17@imperial.ac.uk"
+__version__ = "0.0.8"
+
+""" Script to calculate tree height from distance and angle in a csv file
+and to output the heights to a new csv file """
+
+import os
+import sys
+import pandas as pd
+import numpy as np
+import re
+import ntpath
+
+MyData = [] # initialising empty list for future functions 
+
+def getdata(f):
+    """This function reads the data into a dataframe"""
+    df = pd.read_csv(f)
+    return df
+
+#because the data is now in a dataframe, 
+# columns can be operated on without the for loop
+
+def calc_height(df):
+    """This functions calculates height of the tree from distance and angle of elevation"""
+    df['height'] = df['Distance.m'] * np.tan(np.deg2rad(df['Angle.degrees']))
+    return df
+
+def savedata(data,f):
+    """This function creates correct output file name"""
+    f = ntpath.basename(f).split('.')[0]
+    addition = "_get_TreeHeight.csv"
+    outname = f + addition
+    path = "../Results/"
+    outfilepath = os.path.join(path,outname)
+    data.to_csv(outfilepath)
+
+
+def main(argv):
+		MyData = getdata(argv[1])
+		MyData = calc_height(MyData)
+		savedata(MyData,argv[1])
+
+
+if (__name__ == "__main__"):
+        status = main(sys.argv)
+        sys.exit("I have excited now")
+**********************************************************************
+
+Testing get_TreeHeight.py...
+
+get_TreeHeight.py is a Python script file;
+ checking for docstrings...
+
+Found one or more doctrings!
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Traceback (most recent call last):
+  File "get_TreeHeight.py", line 48, in <module>
+    status = main(sys.argv)
+  File "get_TreeHeight.py", line 42, in main
+    MyData = getdata(argv[1])
+IndexError: list index out of range
+
+======================================================================
+Inspecting script file boilerplate.R...
+
+File contents are:
+**********************************************************************
+MyFunction <- function(Arg1, Arg2){
+  
+  # Statements involving Arg1, Arg2:
+  print(paste("Argument", as.character(Arg1), "is a", class(Arg1))) # print Arg1's type
+  print(paste("Argument", as.character(Arg2), "is a", class(Arg2))) # print Arg2's type
+  return (c(Arg1, Arg2)) #this is optional, but very useful
+}
+
+MyFunction(1,2) #test the function
+MyFunction("Riki","Tiki") #A different test**********************************************************************
+
+Testing boilerplate.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+[1] "Argument 1 is a numeric"
+[1] "Argument 2 is a numeric"
+[1] 1 2
+[1] "Argument Riki is a character"
+[1] "Argument Tiki is a character"
+[1] "Riki" "Tiki"
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.07135s
+
+======================================================================
+Inspecting script file case_study3.R...
+
+File contents are:
+**********************************************************************
+require(ggplot2)
+a <- read.table("../Data/Results.txt", header = TRUE)
+# here's how the data looks like
+print(a[1:3,])
+print(a[90:95,])
+# append a col of zeros
+a$ymin <- rep(0, dim(a)[1])
+# print the first linerange
+p <- ggplot(a)
+p <- p + geom_linerange(data = a, aes(
+  x = x,
+  ymin = ymin,
+  ymax = y1,
+  size = (0.5)),
+  colour = "#E69F00",
+  alpha = 1/2, show_guide = FALSE)
+# print the second linerange
+p <- p + geom_linerange(data = a, aes(
+  x = x,
+  ymin = ymin,
+  ymax = y2,
+  size = (0.5)),colour = "#56B4E9",
+  alpha = 1/2, show_guide = FALSE)
+# print the third linerange
+p <- p + geom_linerange(data = a, aes(
+   x = x,
+   ymin = ymin,
+   ymax = y3,
+   size = (0.5)),
+   colour = "#D55E00",
+   alpha = 1/2, show_guide = FALSE)
+# annotate the plot with labels
+p <- p + geom_text(data = a, aes(x = x, y = -500, label = Label))
+# now set the axis labels,
+# remove the legend, prepare for bw printing
+p <- p + scale_x_continuous("My x axis", breaks = seq(3, 5, by = 0.05)
+  ) +
+    scale_y_continuous("My y axis") + theme_bw() +
+    theme(legend.position = "none")
+# Finally, print in a pdf
+pdf("../Results/MyBars.pdf", width = 12, height = 6)
+print(p)
+dev.off()**********************************************************************
+
+Testing case_study3.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+         x   y1   y2 y3 Label
+1 3.515424 4320 4320  0  <NA>
+2 3.533984 2160 2160  0  <NA>
+3 3.557647 4320 4320  0  <NA>
+          x   y1  y2  y3 Label
+90 3.902155  120 120   0  <NA>
+91 3.915284 1440   0   0  <NA>
+92 3.920952   72  72   0  <NA>
+93 3.942750 1440   0   0  <NA>
+94 3.943905  360 360 360     A
+95 3.983147  240   0   0  <NA>
+
+**********************************************************************
+
+Encountered error:
+Loading required package: ggplot2
+Warning message:
+`show_guide` has been deprecated. Please use `show.legend` instead. 
+Warning message:
+`show_guide` has been deprecated. Please use `show.legend` instead. 
+Warning message:
+`show_guide` has been deprecated. Please use `show.legend` instead. 
+Error in pdf("../Results/MyBars.pdf", width = 12, height = 6) : 
+  cannot open file '../Results/MyBars.pdf'
+Execution halted
+
+======================================================================
+Inspecting script file Multi-f-plots.R...
+
+File contents are:
+**********************************************************************
+#Multi-faceted plots
+#row
+qplot(log(Prey.mass/Predator.mass),
+      facets = Type.of.feeding.interaction ~. ,
+      data = MyDF, geom = "density")
+#column
+qplot(log(Prey.mass/Predator.mass),
+      facets = .~ Type.of.feeding.interaction,
+      data = MyDF, geom = "density")
+**********************************************************************
+
+Testing Multi-f-plots.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Error: could not find function "qplot"
+Execution halted
+
+======================================================================
+Inspecting script file TreeHeight.R...
+
+File contents are:
+**********************************************************************
+# This function calculates heights of trees given distance of each tree
+# from its base and angle to its top, using the trigonometric formula
+# height = distance * tan(radians)
+# ARGUMENTS:
+# degrees
+# distance
+# The angle of elevation in radians
+# The distance from base (e.g., meters)
+#
+# OUTPUT:
+# The heights of the tree, same units as "distance"
+
+tree = read.csv("../Data/trees.csv")
+TreeHeight <- function(degrees, distance){
+  radians <- degrees * pi / 180
+  height <- round(distance * tan(radians), digits = 2)
+  print(paste("Tree height is:", height))
+  
+  return(height)
+}
+
+TreeHeight(41.3, 31.7)
+
+Tree.Height.m = TreeHeight(tree[,3], tree[,2])
+
+tree$Tree.Height.m <- Tree.Height.m
+
+write.csv(tree, "../Results/TreeHts.csv")
+
+
+**********************************************************************
+
+Testing TreeHeight.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+[1] "Tree height is: 27.85"
+[1] 27.85
+  [1] "Tree height is: 27.8"  "Tree height is: 45.25" "Tree height is: 14.67"
+  [4] "Tree height is: 14.93" "Tree height is: 35.97" "Tree height is: 32.41"
+  [7] "Tree height is: 17.46" "Tree height is: 30.14" "Tree height is: 20.31"
+ [10] "Tree height is: 24.43" "Tree height is: 27.5"  "Tree height is: 25.16"
+ [13] "Tree height is: 29.39" "Tree height is: 28.19" "Tree height is: 30.74"
+ [16] "Tree height is: 39.74" "Tree height is: 24.69" "Tree height is: 17
+**********************************************************************
+
+Encountered error:
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> write.table -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file '../Results/TreeHts.csv': No such file or directory
+Execution halted
+
+======================================================================
+Inspecting script file PP_Lattice.R...
+
+File contents are:
+**********************************************************************
+MyDF <- read.csv("../Data/EcolArchives-E089-51-D1.csv") # loading in data
+
+l = length(MyDF$Prey.mass)
+for (i in 1:l){
+  if (MyDF$Prey.mass.unit[i] == "mg") {
+    MyDF$Prey.mass[i] = MyDF$Prey.mass[i] / 1000
+    MyDF$Prey.mass.unit[i] = "g"
+  }
+}
+
+library(lattice)
+library(plyr)
+pdf("../Results/Pred_Lattice.pdf", 11.7, 8.3) # ready to save 1st graph
+histogram(~log(Predator.mass), data =MyDF)
+
+dev.off()
+
+pdf("../Results/Prey_Lattice.pdf", 11.7, 8.3) # graph 2
+histogram(~log(Prey.mass), data = MyDF)
+
+dev.off()
+
+pdf("../Results/SizeRatio_Lattice.pdf", 11.7, 8.3) # graph 3
+histogram(~log((Predator.mass) /(Prey.mass)), data =MyDF)
+
+dev.off()
+
+PP_Results <- ddply(MyDF, ~ Type.of.feeding.interaction, summarize, 
+                    mean_mass_pred = mean(Predator.mass), median_mass_pred = median(Predator.mass), 
+                    mean_mass_prey = mean(Prey.mass), median_mass_prey = median(Prey.mass),
+                    mean_ppsize_ratio = mean(log(Predator.mass/Prey.mass)), 
+                    median_ppsize_ratio = median(log(Predator.mass/Prey.mass)))
+
+str(PP_Results)
+
+
+write.csv(PP_Results, file = "../Results/PP_Results.csv")
+
+
+**********************************************************************
+
+Testing PP_Lattice.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Error in pdf("../Results/Pred_Lattice.pdf", 11.7, 8.3) : 
+  cannot open file '../Results/Pred_Lattice.pdf'
+Execution halted
+
+======================================================================
+Inspecting script file next.R...
+
+File contents are:
+**********************************************************************
+for (i in 1:10) {
+  if ((i %% 2) == 0)
+    next # pass to next iteration of loop
+  print(i)
+}**********************************************************************
+
+Testing next.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+[1] 1
+[1] 3
+[1] 5
+[1] 7
+[1] 9
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.06914s
+
+======================================================================
+Inspecting script file Bin_width.R...
+
+File contents are:
+**********************************************************************
+# basic plotting in R
+
+# plot(y∼x) Scatterplot with y as a response variable
+
+# predator and prey bin widths
+par(mfcol= c(2,1)) #initialize multi-paneled plot
+par(mfg = c(1,1)) # specify which sub-plot to use first
+hist(log(MyDF$Predator.mass),
+     xlab = "Predator Mass (kg)", ylab = "Count", breaks = 20, main = "Predator body masses") # include labels
+par(mfg = c(2,1))
+hist(log(MyDF$Prey.mass),
+     xlab =  "Prey Mass (kg)", ylab = "Count", breaks = 20, main = "Prey body masses")
+**********************************************************************
+
+Testing Bin_width.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Error in hist(log(MyDF$Predator.mass), xlab = "Predator Mass (kg)", ylab = "Count",  : 
+  object 'MyDF' not found
+Execution halted
+
+======================================================================
+Inspecting script file Ricker.R...
+
+File contents are:
+**********************************************************************
+Ricker <- function(N0=1, r=1, K=10, generations=50)
+{
+  # Runs a simulation of the ricker model
+  # Returns a vector of length generations
+  N <- rep(NA, generations)
+  # Creates a vector of NA
+  N[1] <- N0
+  for (t in 2:generations)
+  {
+    N[t] <- N[t-1] * exp(r*(1.0-(N[t-1]/K)))
+  }
+  return (N)
+}
+plot(Ricker(generations=10), type="l")**********************************************************************
+
+Testing Ricker.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.10477s
+
+======================================================================
+Inspecting script file Vectorize1.R...
+
+File contents are:
+**********************************************************************
+M <- matrix(runif(1000000),1000,1000)
+SumAllElements <- function(M){
+	Dimensions <- dim(M)
+	Tot <- 0
+	for (i in 1:Dimensions[1]){
+		for (j in 1:Dimensions[2]){
+			Tot <- Tot + M[i,j]
+		}
+	}
+	return (Tot)
+}
+
+## This on my computer takes about 1 sec
+print(system.time(SumAllElements(M)))
+## While this takes about 0.01 sec
+print(system.time(sum(M)))
+**********************************************************************
+
+Testing Vectorize1.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+   user  system elapsed 
+  0.416   0.000   0.414 
+   user  system elapsed 
+  0.000   0.000   0.001 
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.56486s
+
+======================================================================
+Inspecting script file tapply.R...
+
+File contents are:
+**********************************************************************
+x <- 1:20 # a vector
+
+# A factor (of the same length) defining groups:
+y <- factor(rep(letters[1:5], each = 4))
+
+
+print(tapply( x, y, sum))
+**********************************************************************
+
+Testing tapply.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+ a  b  c  d  e 
+10 26 42 58 74 
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.06923s
+
+======================================================================
+Inspecting script file basic_io.R...
+
+File contents are:
+**********************************************************************
+#A simple R script to illustrate R input-output.
+# Run line by line and check inputs outputs to understand what is
+# happening
+
+MyData <- read.csv("../Data/trees.csv", header = TRUE) # import with headers
+
+write.csv(MyData, "../Results/MyData.csv") #write it out as a new file
+
+write.table(MyData[1,], file = "../Results/MyData.csv",append=TRUE) # Append to it
+
+write.csv(MyData, "../Results/MyData.csv", row.names=TRUE) # write row names
+
+write.table(MyData, "../Results/MyData.csv", col.names=FALSE) # ignore column names
+
+**********************************************************************
+
+Testing basic_io.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Error in file(file, ifelse(append, "a", "w")) : 
+  cannot open the connection
+Calls: write.csv -> eval.parent -> eval -> eval -> write.table -> file
+In addition: Warning message:
+In file(file, ifelse(append, "a", "w")) :
+  cannot open file '../Results/MyData.csv': No such file or directory
+Execution halted
+
+======================================================================
+Inspecting script file Try.R...
+
+File contents are:
+**********************************************************************
+## run a simulation that involves sampling from a population with try
+x <- rnorm(50) #Generate your population
+doit <- function(x){
+  x <- sample(x, replace = TRUE)
+  if(length(unique(x)) > 30) {#only take mean if sample was sufficient
+    print(paste("Mean of this sample was:", as.character(mean(x))))
+  }
+  else {
+    stop("Couldn't calculate mean: too few unique points!")
+  }
+}
+## Try using "try" with vectorization:
+result <- lapply(1:100, function(i) try(doit(x), FALSE))
+
+## Or using a for loop:
+result <- vector("list", 100) #Preallocate/Initialize
+for(i in 1:100) {
+  result[[i]] <- try(doit(x), FALSE)
+  }**********************************************************************
+
+Testing Try.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+[1] "Mean of this sample was: 0.00611078835175997"
+[1] "Mean of this sample was: -0.139025002811966"
+[1] "Mean of this sample was: 0.263920391419773"
+[1] "Mean of this sample was: 0.102613791352812"
+[1] "Mean of this sample was: 0.137104693563039"
+[1] "Mean of this sample was: 0.0573048209903292"
+[1] "Mean of this sample was: 0.0742672895403738"
+[1] "Mean of this sample was: -0.0764010433439766"
+[1] "Mean of this sample was: -0.0397255861703137"
+[1] "Mean of this sample was: -0.113019706287438"
+[
+**********************************************************************
+
+Encountered error:
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+Error in doit(x) : Couldn't calculate mean: too few unique points!
+
+======================================================================
+Inspecting script file apply2.R...
+
+File contents are:
+**********************************************************************
+SomeOperation <- function(v){ # (What does this function do?)
+  if (sum(v) > 0){
+    return (v * 100)
+  }
+  return (v)
+}
+M <- matrix(rnorm(100), 10, 10)
+print (apply(M, 1, SomeOperation))**********************************************************************
+
+Testing apply2.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+            [,1]        [,2]        [,3]       [,4]        [,5]         [,6]
+ [1,]  0.2145206  0.12102560  1.83871470 -137.50760  0.17200281  0.009957178
+ [2,] -0.6561322 -0.62342039 -0.98330053  179.74629 -0.69772659 -0.466151935
+ [3,] -1.2441188 -0.06839276  0.05464872 -255.26566  0.96355991 -0.824766541
+ [4,] -1.1531602 -0.19024210 -1.05387363  -30.10710  1.01482595  0.745909201
+ [5,]  1.6548194 -1.47313593  0.16699744   34.82940  1.62820921 -1.296684580
+ [6,] -0.9925558 -0.26223814  0.8091503
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.06895s
+
+======================================================================
+Inspecting script file get_TreeHeight.R...
+
+File contents are:
+**********************************************************************
+args <- commandArgs(TRUE)
+file_args <- read.csv(args[1], sep=",")
+require(stringr)
+
+TreeHeight <- function(degrees, distance){
+  radians <- degrees * pi / 180
+  height <- round(distance * tan(radians), digits = 2)
+  print(paste("Tree height is:", height))
+  
+  return(height)
+}
+
+y = tools::file_path_sans_ext(gsub("../.*/", "", args[1])) # getting the file name - all the extra bits!
+
+x = paste("../Results",paste(y, "treeheights.csv", sep = "_") , sep = "/")
+
+write.csv(TreeHeight(file_args[,3], file_args[,2]), x)
+**********************************************************************
+
+Testing get_TreeHeight.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Error in file(file, "rt") : cannot open the connection
+Calls: read.csv -> read.table -> file
+In addition: Warning message:
+In file(file, "rt") : cannot open file 'NA': No such file or directory
+Execution halted
+
+======================================================================
+Inspecting script file TAutoCorr.R...
+
+File contents are:
+**********************************************************************
+KWAMT = load("../Data/KeyWestAnnualMeanTemperature.RData")
+
+KWAMT = ats[,]
+
+# utils::View(KWAMT)
+
+Temperature = KWAMT[[2]]
+Year = KWAMT[[1]]
+
+plot.ts(Year, Temperature)
+
+# ?plot.ts
+
+
+# Control - shift - c #'s everything highlighted!
+
+?cor
+x_time = KWAMT[-nrow(KWAMT),2] # 1901 - 1999
+y_time = KWAMT[-1,2] # 1902 -2000
+
+step_1_result = cor(x_time, y_time, method = "pearson") # pearsons corr for pairs of data
+
+n_repeats = 1000 # repeat 1000 times
+
+step_2_result = rep(0,n_repeats) # creating an empty vector()
+  
+for (v in 1:n_repeats) { # for loop for calculating 100 reps.
+  samp1 = sample(KWAMT[[2]], 60) 
+  samp2 = sample(KWAMT[[2]], 60)
+  corr = cor(samp1, samp2, method = "pearson")
+  step_2_result[v] = corr
+}
+
+graphics.off()
+
+plot.new()
+
+svg("../Results/TAutoCorr.svg",11.7, 8.3)
+
+p_value = step_2_result[] > step_1_result[]
+
+p_value = as.numeric(p_value)
+p_value = sum(p_value) / 1000 # significantly different from normal
+
+hist(step_2_result, xlab = "correlation coefficient values", 
+  ylab = "Frequency", col = rgb(1, 0, 0, 0.5), 
+  main = "Temperature Coefficients", breaks = 20) 
+legend('topleft', c("1000 random correlation coefficients", "successive year correlation"),
+  fill=c(rgb(1, 0, 0, 0.5), rgb(0, 0, 1, 0.5)), cex = 1.25)
+abline(v = step_1_result, col = rgb(0, 0, 1, 0.5), lwd = 4) # successive year corr
+
+dev.off()
+
+print(p_value)
+**********************************************************************
+
+Testing TAutoCorr.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+cor                   package:stats                    R Documentation
+
+_C_o_r_r_e_l_a_t_i_o_n, _V_a_r_i_a_n_c_e _a_n_d _C_o_v_a_r_i_a_n_c_e (_M_a_t_r_i_c_e_s)
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     ‘var’, ‘cov’ and ‘cor’ compute the variance of ‘x’ and the
+     covariance or correlation of ‘x’ and ‘y’ if these are vectors.  If
+     ‘x’ and ‘y’ are matrices then the covariances (or correlations)
+     between the columns of
+**********************************************************************
+
+Encountered error:
+Error in plot.new() : cairo error 'error while writing to output stream'
+Calls: hist -> hist.default -> plot -> plot.histogram -> plot.new
+Execution halted
+
+======================================================================
+Inspecting script file case_study1.R...
+
+File contents are:
+**********************************************************************
+#case study 1
+
+require(ggplot2)
+require(reshape2)
+
+GenerateMatrix <- function(N) {
+  M <- matrix(runif(N*N), N, N)
+  return(M)
+}
+
+M <- GenerateMatrix(10)
+
+M[1:3, 1:3]
+
+Melt <- melt(M)
+
+Melt[1:4,]
+
+ggplot(Melt, aes(Var1,Var2, fill = value)) + geom_tile()
+
+# adding a black line dividing cells
+p <- ggplot(Melt, aes(Var1, Var2, fill = value))
+p <- p + geom_tile(colour = "black")
+
+# removing the legend
+q <- p + theme(legend.position = "none")
+
+# removing all the rest
+q <- p + theme(legend.position = "none",
+   panel.background = element_blank(),
+   axis.ticks = element_blank(),
+   panel.grid.major = element_blank(),
+   panel.grid.minor = element_blank(), 
+   axis.text.x = element_blank(),
+   axis.title.x = element_blank(),
+   axis.text.y = element_blank(),
+   axis.title.y = element_blank())
+
+# exploring the colors
+q + scale_fill_continuous(low = "yellow", high = "darkgreen")
+q + scale_fill_gradient2()
+q + scale_fill_gradientn(colours = grey.colors(10))
+q + scale_fill_gradientn(colours = rainbow(10))
+q + scale_fill_gradientn(colours = c("red", "white", "blue"))
+   
+**********************************************************************
+
+Testing case_study1.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+          [,1]       [,2]      [,3]
+[1,] 0.3655752 0.12168990 0.7750578
+[2,] 0.1047704 0.07956116 0.9883427
+[3,] 0.7280319 0.85951979 0.9257193
+  Var1 Var2     value
+1    1    1 0.3655752
+2    2    1 0.1047704
+3    3    1 0.7280319
+4    4    1 0.4619430
+
+**********************************************************************
+
+Encountered error:
+Loading required package: ggplot2
+Loading required package: reshape2
+
+======================================================================
+Inspecting script file Vectorize2.R...
+
+File contents are:
+**********************************************************************
+# Runs the stochastic (with gaussian fluctuations) Ricker Eqn .
+
+rm(list=ls())
+set.seed(1)
+stochrickvect<-function(p0 = runif(1000,.5,1.5),r=1.2,K=1,numyears=100, sigma = 0.2)
+{
+  #initialize
+  N<-matrix(NA,numyears,length(p0))
+  N[1,]<-p0
+  
+  for (yr in 2:numyears) #for each pop, loop through the years
+  {
+    N[yr,]<-N[yr-1,]*exp(r*(1-N[yr-1,]/K)+rnorm(length(p0),0,sigma))
+  }
+  return(N)
+}
+object <- stochrickvect()
+# Now write another code called stochrickvect that vectorizes the above 
+# to the extent possible, with improved performance: 
+
+print("Vectorized Stochastic Ricker takes:")
+print(system.time(res2<-stochrickvect()))
+**********************************************************************
+
+Testing Vectorize2.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+[1] "Vectorized Stochastic Ricker takes:"
+   user  system elapsed 
+  0.016   0.000   0.015 
+
+**********************************************************************
+
+Code ran without errors
+
+Time consumed = 0.12094s
+
+======================================================================
+Inspecting script file TAutoCorr.tex...
+
+File contents are:
+**********************************************************************
+\documentclass[12pt]{article}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{svg}
+\title{Key West Annual Temperatures}
+\author{Abigail Rossina Millward}
+\date{1st of November 2017}
+\begin{document}
+	\maketitle
+	Is the temperature of one year significantly correlated with the next year (successive years), across the years?
+	
+	\begin{abstract}
+		The aim of this assignment was to see if the temperatures collected
+		at Key West in Florida were significantly correlated with the next year.
+	\end{abstract}
+	
+	\section{Results}
+		
+	\begin{figure}[H]
+			\centering
+	\includegraphics[scale=.4]{TAutoCorr1.pdf}
+			\caption{Temperature in Key West, Florida from 1901-2000.}
+	\label{fig:TAutoCorrsvg1}
+	\end{figure}
+
+	\section{Interpretation}
+	Figure 1 shows a graph with a significantly positive correlation between t and t-1 years. The positive correlation shown in the graph is further backed up by a pearsons correlation value of 0.33, which was attained by computing t$(x_time)$ and t-1$(y_time)$ years using the $cor()$ function in R, and a p value of $~ 0.003$ indicating these results are extremely unlikely to arise by chance. Hence, it can be interpreted that one years temperature is indicative of the subsequent years temperature.
+	
+	\end{document}
+**********************************************************************
+
+Testing TAutoCorr.tex...
+
+======================================================================
+Inspecting script file case_study2.R...
+
+File contents are:
+**********************************************************************
+require(ggplot2)
+# function that returns an ellipse
+build_ellipse <- function(hradius, vradius){
+  npoints = 250
+  a <- seq(0, 2 * pi, length = npoints + 1)
+  x <- hradius * cos(a)
+  y <- vradius * sin(a)
+  return(data.frame(x = x, y = y))
+}
+# Size of the matrix
+N <- 250
+# Build the matrix
+M <- matrix(rnorm(N * N), N, N)
+# Find the eigenvalues
+eigvals <- eigen(M)$values
+# Build a dataframe
+eigDF <- data.frame("Real" = Re(eigvals),
+                    "Imaginary" = Im(eigvals))
+# The radius of the circle is sqrt(N)
+my_radius <- sqrt(N)
+# Ellipse dataframe
+ellDF <- build_ellipse(my_radius, my_radius)
+# rename the columns
+names(ellDF) <- c("Real", "Imaginary")
+# Now the plotting:
+# plot the eigenvalues
+p <- ggplot(eigDF, aes(x = Real, y = Imaginary))
+p <- p +
+  geom_point(shape = I(3)) +
+  theme(legend.position = "none")
+# now add the vertical and horizontal line
+p <- p + geom_hline(aes(yintercept = 0))
+p <- p + geom_vline(aes(xintercept = 0))
+# finally, add the ellipse
+p <- p + geom_polygon(data = ellDF,
+                      aes(x = Real,
+                          y = Imaginary,
+                          alpha = 1/20,
+                          fill = "red"))
+pdf("../Results/Girko.pdf")
+print(p)
+dev.off()
+**********************************************************************
+
+Testing case_study2.R...
+
+Output (only first 500 characters): 
+
+**********************************************************************
+
+**********************************************************************
+
+Encountered error:
+Loading required package: ggplot2
+Error in pdf("../Results/Girko.pdf") : 
+  cannot open file '../Results/Girko.pdf'
+Execution halted
+
+======================================================================
+======================================================================
+Finished running scripts
+
+Ran into 16 errors
+
+======================================================================
+======================================================================
+
+FINISHED WEEKLY ASSESSMENT
+
+Current Marks for the Week = 97.5
+
+NOTE THAT THESE ARE NOT THE FINAL MARKS FOR THE WEEK, BUT AN UPPER BOUND ON THE MARKS!
