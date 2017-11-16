@@ -1,6 +1,7 @@
+#!usr/bin/python2.7
 import re
+import pprint
 
-# Read the file
 f = open('../Data/blackbirds.txt', 'r')
 text = f.read()
 f.close()
@@ -30,4 +31,4 @@ my_reg3 = r'\bKingdom\b\s+?([a-zA-Z]+)\s+?.+?\bPhylum\b\s+?([a-zA-Z]+)\s+?.+?\bS
 kingdom3_search = re.findall(my_reg3, text)
 
 
-print kingdom3_search
+pprint.pprint(kingdom3_search)

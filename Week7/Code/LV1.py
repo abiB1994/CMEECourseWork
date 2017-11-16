@@ -6,31 +6,25 @@ import pylab as p #Contains matplotlib for plotting
 
 # import matplotlip.pylab as p #Some people might need to do this
 
-import sys
-
-
 def dR_dt(pops, t=0):
     """ Returns the growth rate of predator and prey populations at any 
     given time step """
     
     R = pops[0]
     C = pops[1]
-    dRdt = r*R*(1 - R/K) - a*R*C 
+    dRdt = r*R - a*R*C 
     dydt = -z*C + e*a*R*C
     
     return sc.array([dRdt, dydt])
 
 # Define parameters:
-r = int(sys.argv[1]) # Resource growth rate
-a = int(sys.argv[2]) # Consumer search rate (determines consumption rate) 
-z = int(sys.argv[3]) # Consumer mortality rate
-e = int(sys.argv[4]) # Consumer production efficiency
-K = int(sys.argv[5]) # Carrying capacity
-
+r = 1. # Resource growth rate
+a = 0.1 # Consumer search rate (determines consumption rate) 
+z = 1.5 # Consumer mortality rate
+e = 0.75 # Consumer production efficiency
 
 # Now define time -- integrate from 0 to 15, using 1000 points:
-t = sc.linspace(0, int(input("Choose an end year: ")), int(input("Choose how many points: ")))
-print t 
+t = sc.linspace(0, 15,  1000)
 
 x0 = 10
 y0 = 5 
@@ -45,14 +39,9 @@ f1 = p.figure() #Open empty figure object
 p.plot(t, prey, 'g-', label='Resource density') # Plot
 p.plot(t, predators  , 'b-', label='Consumer density')
 p.grid()
-p.figtext(.8, .6, " r =" + str(r) + "\n a =" + str(a) + "\n z = " + str(z)
-			+ "\n e = " + str(e) + "\n K = " + str(K))
 p.legend(loc='best')
 p.xlabel('Time')
 p.ylabel('Population')
 p.title('Consumer-Resource population dynamics')
 p.show()
-f1.savefig('../Results/prey_and_predators_1.pdf') #Save figure
-
-if __name__ == "__main__":
-		sys.exit("I have excited now")
+f1.savefig('../prey_and_predators_1.pdf') #Save figure
