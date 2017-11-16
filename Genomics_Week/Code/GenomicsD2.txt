@@ -60,7 +60,7 @@ Fixation of Neutral Mutations:
 
 For all pops no matter what the size, mut rate is the same, but fixation time differs
 
-
+Revealing the demo. hist of species using DNA seq
 
 
 

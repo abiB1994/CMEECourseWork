@@ -1,0 +1,88 @@
+# Natural Selection
+
+Linkage Equil + disequil 
+-LD is correlation between polymorphisms
+
+# Phylogenetics
+
+Relationships between time:
+-Trait evolution - Evolution of Guenons :old world monkeys - all look 
+really diff but closely related. Live sympatrically. All are capable of 
+hybridising, so dist. diff looks maybe neccessary to prevent inbreeding
+
+Phylogenetic Pseudoreplication:
+- Sudorep. things that are linked but you act like they arent 
+Closer phylogeny - more closely linked, share more genetics
+
+Trying to unite groups that are most closely related - also helps if
+you have a knowledge of time when species diverged, can then put a time 
+on things
+
+Few fixed diff. occur between human pops - Afr vs Eur vs Asi
+
+Evolution occurs at different rates in different lineages/species etc
+-Some species have their niche "perfected"
+-Generation time
+-Mutation rate
+
+Rate of evo product of gen time and mutation rate
+
+Incomplete lineage sorting - 
+-If you only sample 1 locus, you will get a completely diff picture - discordance
+amount of discordance depends on actual pop history +
+Effective pop size of ancestral descendant 
+
+Discordance between gene trees and sp. trees. Don't show same branching pattern
+
+Fossils only give us part of the story - min. time that a split could have occured
+Fossils always younger than divergence date, allelic lin. diverg. always older
+
+MRCA - Most Recent Common Ancestor 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
