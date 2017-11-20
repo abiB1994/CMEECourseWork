@@ -21,11 +21,11 @@ def dR_dt(pops, t=0):
     return sc.array([dRdt, dydt])
 
 # Define parameters:
-r = int(sys.argv[1]) # Resource growth rate
-a = int(sys.argv[2]) # Consumer search rate (determines consumption rate)
-z = int(sys.argv[3]) # Consumer mortality rate
-e = int(sys.argv[4]) # Consumer production efficiency
-K = int(sys.argv[5]) # Carrying capacity
+r = float(sys.argv[1]) # Resource growth rate
+a = float(sys.argv[2]) # Consumer search rate (determines consumption rate)
+z = float(sys.argv[3]) # Consumer mortality rate
+e = float(sys.argv[4]) # Consumer production efficiency
+K = float(sys.argv[5]) # Carrying capacity
 
 
 # Now define time -- integrate from 0 to 15, using 1000 points:
