@@ -57,9 +57,6 @@ species_abundance = function(community){
 
 #Octaves function
 
-octaves = function(spec){
-  return(tabulate(floor(log2(spec)) + 1))
-}
 
 ###New work from here###
 
@@ -76,7 +73,7 @@ cluster_run = function(speciation_rate, size, wall_time, interval_rich, interval
     community = temp
     gen_no = gen_no + 1
     if ((gen_no < burn_in_gen) & (gen_no %% interval_rich == 0)){
-      spec_rich_store = c(spec_rich_store, temp)
+      spec_rich_store = c(spec_rich_store, list(temp))
     } 
     if (gen_no %% interval_oct == 0){
       spec_abundance_store = c(spec_abundance_store, list(octaves(species_abundance(temp))))
@@ -86,7 +83,7 @@ cluster_run = function(speciation_rate, size, wall_time, interval_rich, interval
 }
 
 
-iter <- as.numeric(Sys.getenv("PBS_ARRAY_INDEX"))
+#iter <- as.numeric(Sys.getenv("PBS_ARRAY_INDEX"))
 #iter = 1
 
 abi_spec_rate = 0.003596
@@ -119,7 +116,7 @@ do_simulation = function(iter2){
 }
 
 #do_simulation(1)
-do_simulation(iter)
+#do_simulation(iter)
 
 
 sum_vect = function(x,y){
@@ -162,16 +159,152 @@ calc = function(iterbegin){
   }
   return(mean_store / 25)
 }
-names = c(1,2,3,4,5,6,7,8,9,10,11)
-abundance_500 = calc(1)
-abundance_1000 = calc(26)
-abundance_2500 = calc(51)
-abundance_5000 = calc(76)
-par(mfrow = c(2,2))
-plot_5000 <- barplot(abundance_5000, main = "Size = 5000", names.arg = names)
-plot_2500 <- barplot(abundance_2500, main =  "Size = 2500", names.arg = names)
-plot_1000 <- barplot(abundance_1000, main = "Size = 1000", names.arg = names[1:10])
-plot_500 <- barplot(abundance_500, main = "Size = 500", names.arg = names[1:9])
+
+#Q 20
+# names = c(1,2,3,4,5,6,7,8,9,10,11)
+# abundance_500 = calc(1)
+# abundance_1000 = calc(26)
+# abundance_2500 = calc(51)
+# abundance_5000 = calc(76)
+# par(mfrow = c(2,2))
+# plot_5000 <- barplot(abundance_5000, main = "Size = 5000", names.arg = names)
+# plot_2500 <- barplot(abundance_2500, main =  "Size = 2500", names.arg = names)
+# plot_1000 <- barplot(abundance_1000, main = "Size = 1000", names.arg = names[1:10])
+# plot_500 <- barplot(abundance_500, main = "Size = 500", names.arg = names[1:9])
+
+
+challenge_C = function(iterbegin){
+  iter = iterbegin
+  mean_store = c()
+  vect = c()
+  while (iter >= iterbegin & iter <= (iterbegin + 24)){
+    file = paste("my_test_file", iter, ".rda", sep = "_")
+    file = paste("../Results/", file, sep = "")
+    load(file)
+    n = length(spec_rich_store)/100
+    start_no = 1
+    it = start_no
+    if (n > start_no){
+      for (it in start_no:n){
+        summing = length(unique(spec_rich_store[it:(it+99)]))
+        vect = c(vect, summing)
+        it = it + 99
+      }
+    }
+    iter = iter + 1
+    mean_store = sum_vect(mean_store, vect)
+  }
+  return(mean_store/25)
+}
+
+#richness_500 = challenge_C(1)
+#x = 1:length(richness_500)
+#plot(x =x, y =richness_500)
+
+#odf =  data.frame(index = x, richness = richness_500)
+#df = data.frame(index = x[1:50000], richness = richness_500[1:50000])
+#df2 = data.frame(index = x[50001:100000], richness = richness_500[50001:100000])
+#library(ggplot2)
+# Basic line plot with points
+#ggplot(data=df, aes(x=index, y=richness, group=1)) +
+  #geom_point(size = 0.01)
+#ggplot(data=df2, aes(x=index, y=richness, group=1)) +
+  #geom_point(size = 0.01)
+#ggplot(data=odf, aes(x=index, y=richness, group=1)) +
+  #geom_point(size = 0.01)
+
+################################################
+#Challenge D
+################################################
+
+#Coalescence
+
+lineages = function(j){
+  return(rep(1, j))
+}
+
+challenge_D = function(N, iter ="2"){
+  N = N
+  a = as.numeric(proc.time())[3]   #Measuing time 
+  abundances = c()   # initialising empty abundance vector
+  j = N   # original length, j will always stay the same
+  lineage = lineages(j)    #initialising lineage
+  O = abi_spec_rate*((j - 1) / (1 - abi_spec_rate))  #creating o
+  index_j = round(runif(1, 1, length(lineage))) # picking random index
+  randnum = runif(1) # picking random number
+  while ( N > 1){
+    if (randnum < (O/ (O + (N - 1)))){
+      abundances = c(abundances,lineage[index_j])  # Adding lineage to abundance
+    }
+    else{
+      index_i = round(runif(1, 1, length(lineage)))
+      if(index_i != index_j){
+        lineage[index_i] = lineage[index_i] + lineage[index_j] #Speciation
+      }
+      else{
+        next
+      }
+    }
+    lineage = lineage[-(index_j)]  #Removing the added lineage
+    N = N -1 #same here
+    randnum = runif(1) #initialising new random number
+    index_j = round(runif(1, 1, length(lineage))) # and new index
+  }
+  final_time = (as.numeric(proc.time())[3] - a)/60
+  abundances = c(abundances, lineage)
+  abundances = octaves(species_abundance(abundances))
+  save(abundances, final_time, file = paste("../Results/Challenge_D", iter, ".rda", sep = "_" ))
+}
 
 
 
+do_simulation_CD = function(){ #Similar to do_sim for HPC, allowing 100 simulations to run
+  a = as.numeric(proc.time())[3]
+  iter = 1
+  while (iter <101) {
+  if (iter < 26){
+    N = 500
+    set.seed(iter)
+    challenge_D(N, iter)
+    iter = iter + 1
+  }
+  else if (iter < 51){
+    N = 1000
+    set.seed(iter)
+    challenge_D(N, iter)
+    iter = iter + 1
+  }
+  else if (iter < 76){
+    N = 2500
+    set.seed(iter)
+    challenge_D(N, iter)
+    iter = iter + 1
+  }
+  else if (iter < 101){
+    N = 5000
+    set.seed(iter)
+    challenge_D(N, iter)
+    iter = iter + 1
+  }
+  }
+  return(as.numeric(proc.time())[3] - a)
+}
+
+#challenge_D(500)
+
+for_plotting = function(){
+  abundances_v = c()
+  iter = 1
+  while (iter < 26){
+    file = paste("../Results/Challenge_D", iter, ".rda", sep = "_" )
+    load(file)
+    abundances_v = sum_vect(abundances_v, abundances)
+    print(abundances_v)
+    iter = iter + 1
+  }
+  return(abundances_v)
+}
+
+#plt = for_plotting()
+#barplot(plt/25)
+#graphics.off()  

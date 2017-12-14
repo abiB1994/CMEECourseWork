@@ -1,0 +1,319 @@
+Ecological Neutral Theory
+
+Neutral thoery- one tool in toolbox
+- Individuals are ecologically equivilant - Neutral
+But neutral != null model
+
+Neutral Models assume species are the same - not so - it assumes
+INDIVIDUALS are the same.
+
+Demographic properties are independant of species identity
+
+Does NOT mean that species are interchangable - if groups are not the same
+try a diff model
+
+Eventually everything becomes the same
+
+INTRO TO HPC
+
+Embarassingly parallel problems
+-Graphics - i.e. graphics cards
+-Simulations with multi params.
+
+Non embarrassingly parallel probs.
+-Fluid dynamics
+-Multi tasks run by single program
+
+Parallelize code:
+i = as.numeric(Sys.getenv("PBS_ARRAY_INDEX"))
+
+do_simulation(i)
+
+used in code to give a simulation number
+
+sudo random - if you set seed and ask for a random number, you will
+get the same "random" number
+
+running in parallel requires taking control of "random seeds"
+
+Each simulation requires a diff seed i.e. sim 1 seed 1 etc.
+
+save results in ram then write to the disk at the end
+
+Output your code in series of files
+i.e. output1.rda
+output2.rda
+etc
+
+Write local code to read in rda(r data) outputs 
+
+Experimenting with a parameter also:
+
+using if statement or %% :
+
+Test code locally to know your memory and time requirements - important!
+Never see HPC, when you request use of it, only get a set amount of time
+so if code overruns, you don't get any outcome! Type top to see how much ram
+is being used in terminal?
+
+Build a timer into your code!
+
+
+#set random seed as i
+# select sim. param. 
+#do sim
+#save output ..i...
+#inc. timer
+
+HPC at Imperial :
+cx1
+Cluster of many ordinary computers
+
+cx2
+Massively parallel system
+
+ax1
+Even bigger and better!
+
+
+$HOME - 10Gb
+
+$WORK - 150Gb - but not backed up
+
+$TMPDIR - Largely ignore - work disappears in here!
+
+You have to collect them back from TMPDIR to WORK and WORK to HOME.
+
+Need to write in your shell script
+
+Use sftp:
+
+sftp 
+
+
+
+
+
+ssh -l username login.cx1.hpc.ic.ac.uk
+ls #lists the files in $HOME
+
+mkdir foldername
+
+
+#PBS -l walltime=12:00:00    <- tells the machine how long this code needs to run
+#PBS -l select=1:ncpus=1:mem=800mb  <- how much memory code needs
+
+R --vanilla < PATH/TO/FILE
+
+mv datafile* $WORK <- allows for alternate ending i.e. file1, 2
+
+
+Day 3 lecture
+
+Neutral Theory model - 
+
+- Speciation and death
+- Dynamic Equilirium - Species constantly changing - constant state of flux
+						- But still balance between in and out
+						
+						-Speciation - Species change
+						
+Some individuals don't survive to the present day - not worth monitoring 
+Dont need to remember phylogeny, where new species came from
+
+- Coalescence
+-Turns everything upside down
+- Uncover everything that we know for all individuals
+
+- Sam Thompson - Simulation of every tree in Panamar watershed area
+				-Using Coalescence
+				- Using neutral theory to predict the present situation
+
+J <- size of community in Hubbles calc.
+
+Species area relationships -
+Preston Function
+
+
+HPC
+-Rscript 
+-R --vanilla
+-R CMD BATCH
+
+
+Fractals in nature
+
+Complex numbers:
+-i = sqrt(negative no.)
+
+
+x= a + ib
+
+Mandelbrot set - funny images!
+Z -> Z^2 + C
+
+C is given by position on the complex plane
+Get sequence of nos out - if it flys off to infinity - outside mandelbrot set
+
+Start with z = 0
+
+
+Also Julia sets
+
+Z <- Z^2 + C 
+C is constant
+
+
+What is a fractal
+
+Lines ,flat squares, Cubes - NOT FRACTAL
+
+Fractal has a dimension that is not a whole number - Convoluted!
+They are also self similar
+
+Koch curve
+
+Look at the slides
+
+Measuring dimension of costline
+
+Fractal behaviour in biology may only work at certain (probably intermediate)
+scales
+
+All equations are on slides
+
+
+Area of a fern - box counting algorithm
+
+For almost 2d 
+Log length of sqaure (x)
+(y) no of squares to cover object
+
+Fractal dimension D = -1 * grad. 
+will give fractal dimension
+
+
+
+
+Hausdorff dimension
+
+Why do fractals appear in nature:
+Biol.
+-Simple set of rules (DNA)
+-Fractal structures are heritable
+-Need to max surface area, min vol
+
+Geograph.
+-Same processes at multi scales
+
+
+Also in landscape eco
+anim behav
+chaos
+
+
+Gaussian + Fat Tailed dispersal
+- on lecture slides
+
+All on log scales:
+Fat tailed dispersal allows for longer and further travel - wind dispersal
+
+Fat tailed dispersal - leads to power law for species rich by area for longer
+
+Animal behaviour
+Fat tailed dispersal
+-Optimum search strategy without local knowledge
+
+chaos
+
+Tiniest change makes a big diff to outcome much later on
+Logistic function:
+Describing rate of change
+Logistic map:
+Showing next discrete value
+
+Fractals display self similarity
+Deterministic chaos is present in systems where a small change in the
+initial conditions dramatically changes the outcome
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

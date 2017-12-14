@@ -46,8 +46,6 @@ chaos_game = function(){
   }
 }
 
-chaos_game()
-
 
 
 challenge_E = function(){
@@ -74,17 +72,16 @@ challenge_E = function(){
       i = i +1
       n = n+1
     }
-    #samp = sample(c(1,2,3), 1)
-    #x = c((to_samp[[samp]][1]), to_samp[[samp]][2])
-    #new_point = c(((x0[1] + x[1])/2), ((x0[2] + x[2])/2))
-    #points(x = new_point[1], y = new_point[2], cex = 0.2)
-    #x0 = new_point
-    #i = i +1
+    samp = sample(c(1,2,3), 1)
+    x = c((to_samp[[samp]][1]), to_samp[[samp]][2])
+    new_point = c(((x0[1] + x[1])/2), ((x0[2] + x[2])/2))
+    points(x = new_point[1], y = new_point[2], cex = 0.2)
+    x0 = new_point
+    i = i +1
   }
 }
 
 
-challenge_E()
 
 
 challenge_E2 = function(){
@@ -100,7 +97,7 @@ challenge_E2 = function(){
   points(x = x0[1],y= x0[2], col = "green", pch =14 )
   i = 1
   n = 1
-  while (i <= 10000) {
+  while (i <= 1000) {
     while (n <= 100) {
       cl <- rainbow(100)
       samp = sample(c(1,2,3), 1)
@@ -111,17 +108,16 @@ challenge_E2 = function(){
       i = i +1
       n = n+1
     }
-    #samp = sample(c(1,2,3), 1)
-    #x = c((to_samp[[samp]][1]), to_samp[[samp]][2])
-    #new_point = c(((x0[1] + x[1])/2), ((x0[2] + x[2])/2))
-    #points(x = new_point[1], y = new_point[2], cex = 0.2)
-    #x0 = new_point
-    #i = i +1
+    samp = sample(c(1,2,3), 1)
+    x = c((to_samp[[samp]][1]), to_samp[[samp]][2])
+    new_point = c(((x0[1] + x[1])/2), ((x0[2] + x[2])/2))
+    points(x = new_point[1], y = new_point[2], cex = 0.2)
+    x0 = new_point
+    i = i +1
   }
 }
 
 
-challenge_E2()
 
 
 challenge_E3 = function(){
@@ -159,12 +155,9 @@ challenge_E3 = function(){
 }
 
 
-challenge_E3()
-
-plot(-20:20, -20:20, type = "n")
 turtle = function(start, direction, len, col = 1){
   direction = direction * (pi/180)
-  points(x = start[1], y= start[2], cex = 0.5, col = col)
+  points(x = start[1], y= start[2], cex = 0.1, col = col)
   new_xy = c(((len * (cos(direction)))+start[1]), ((len * sin(direction))+start[2]))
   x = c(start[1], new_xy[1])
   y = c(start[2], new_xy[2])
@@ -173,16 +166,11 @@ turtle = function(start, direction, len, col = 1){
 }
     
 
-turtle( c(1,1), 90, 4)
-
-
 elbow = function(start, direction, len){
   direction = direction * (pi/180)
   a = turtle(start, direction, len)
   turtle(a, direction - 45, (0.95*(len)))
 }
-
-elbow( c(1,1), 50, 4)
 
 
 spiral = function(start, direction, len){
@@ -190,18 +178,13 @@ spiral = function(start, direction, len){
   spiral(a, direction - 45, 0.95*(len))
 }
 
-spiral(c(-5,5), 50, 7)
 
-
-spiral2 = function(start, direction, len){
+spiral_2 = function(start, direction, len){
   if (len > .5){
     a = turtle(start, direction, len)
-    spiral2(a, (direction)-45, 0.95*(len))
+    spiral_2(a, (direction)-45, 0.95*(len))
   }
 }
-
-spiral2(c(-5,5), 30, 9)
-
 
 
 tree = function(start, direction, len){
@@ -212,9 +195,6 @@ tree = function(start, direction, len){
   }
 }
 
-tree(c(-15,-5), 20, 10)
-
-
 fern = function(start, direction, len){
   if (len > 2){
     a = turtle(start, direction, len)
@@ -223,10 +203,6 @@ fern = function(start, direction, len){
   }
 }
 
-
-
-plot(-40:40, -40:40, type = "n")
-fern(c(-15,-5), 20, 15)
 
 
 
@@ -244,11 +220,6 @@ fern_2 = function(start, direction, len, dir){
     }
   }
 }  
-
-
-
-plot(-90:90, -90:90, type = "n")
-fern_2(c(0,-60), 90, 30, -1)
 
 
 
@@ -270,12 +241,6 @@ challenge_F = function(start, direction, len, dir, col = rainbow(n), n = 1){
 
 
 
-plot(-60:90, -60:90, type = "n")
-challenge_F(c(0,-60), 90, 20, -1)
-
-
-
-
 challenge_F2= function(start, direction, len, col = rainbow(n), n = 1){
   if (len > .1){
     a = turtle(start, direction, len, col[n])
@@ -285,37 +250,28 @@ challenge_F2= function(start, direction, len, col = rainbow(n), n = 1){
 }
 
 
-plot(-20:20, -20:20, type = "n")
-challenge_F2(c(0,-15), 90, 15, "blue")
 
 
 
-
-challenge_G = function(start, direction, len, dir){
-  while (len > 1){
-    turtle2 = function(start, direction,len,dir){
-    new_xy = c(((len * cos(direction))+start[1]), (len * sin(direction)+start[2]))
-    x = c(start[1], new_xy[1])
-    y = c(start[2], new_xy[2])
-    lines(x=x , y = y)
-    dir = -dir
-    if (dir == -1){ d = direction - pi/4}
-    else { d = direction + pi/4}
-      a = turtle2(start, direction,len, dir)
-      turtle2(a, d, 0.38*len,dir)
-      turtle2(a, direction, 0.87*len, dir)
+challenge_G <- function(start, direction, len, dir){
+  if (len > 1){
+    challenge_G1 <- function(start, direction, len, dir){
+        new_xy = c(((len * cos(direction))+start[1]), (len * sin(direction)+start[2]))
+        x = c(start[1], new_xy[1])
+        y = c(start[2], new_xy[2])
+        lines(x,y)
+        return(new_xy)
+     }
+      if (dir == -1){ d = direction - pi/4}
+      else { d = direction + pi/4}
+      a = challenge_G1
+      b = a(start, direction,len, dir)
+      challenge_G(b, d, .38*len, -dir)
+      challenge_G(b, direction, .87*len, -dir)
   }
-  return(new_xy)
-
-}  
-
-plot(50,50, type="n", axes=FALSE, ann=FALSE)
-
-challenge_G(c(0,2), pi/2, 3, 1)
-
-countdown <- function(n) {
-  while (n > 0) n <- n-1;
-  "done"
 }
-countdown(10)
+
+
+
+
 
