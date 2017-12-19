@@ -151,7 +151,7 @@ calc = function(iterbegin){
         summing = sum_vect(spec_abundance_store[[it]], spec_abundance_store[[it+1]])
         spec_abundance_store[[it+1]] = summing
       }
-      summed = spec_abundance_store[[n]] / (n-81)
+      summed = spec_abundance_store[[n]] / (n-start_no)
       mean_store = sum_vect(vect, summed)
       vect = mean_store
     }
