@@ -73,7 +73,7 @@ cluster_run = function(speciation_rate, size, wall_time, interval_rich, interval
     community = temp
     gen_no = gen_no + 1
     if ((gen_no < burn_in_gen) & (gen_no %% interval_rich == 0)){
-      spec_rich_store = c(spec_rich_store, list(temp))
+      spec_rich_store = c(spec_rich_store, list(species_richness(temp)))
     } 
     if (gen_no %% interval_oct == 0){
       spec_abundance_store = c(spec_abundance_store, list(octaves(species_abundance(temp))))
@@ -181,14 +181,14 @@ challenge_C = function(iterbegin){
     file = paste("my_test_file", iter, ".rda", sep = "_")
     file = paste("../Results/", file, sep = "")
     load(file)
-    n = length(spec_rich_store)/100
+    n = length(spec_rich_store)
     start_no = 1
     it = start_no
     if (n > start_no){
       for (it in start_no:n){
-        summing = length(unique(spec_rich_store[it:(it+99)]))
+        summing = length(unique(spec_rich_store[it]))
         vect = c(vect, summing)
-        it = it + 99
+        it = it + 1
       }
     }
     iter = iter + 1
@@ -197,9 +197,9 @@ challenge_C = function(iterbegin){
   return(mean_store/25)
 }
 
-#richness_500 = challenge_C(1)
-#x = 1:length(richness_500)
-#plot(x =x, y =richness_500)
+richness_500 = challenge_C(1)
+x = 1:length(richness_500)
+plot(x =x, y =richness_500)
 
 #odf =  data.frame(index = x, richness = richness_500)
 #df = data.frame(index = x[1:50000], richness = richness_500[1:50000])
