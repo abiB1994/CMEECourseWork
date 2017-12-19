@@ -186,7 +186,7 @@ challenge_C = function(iterbegin){
     it = start_no
     if (n > start_no){
       for (it in start_no:n){
-        summing = length(unique(spec_rich_store[it]))
+        summing = spec_rich_store[it]
         vect = c(vect, summing)
         it = it + 1
       }
@@ -197,9 +197,10 @@ challenge_C = function(iterbegin){
   return(mean_store/25)
 }
 
-richness_500 = challenge_C(1)
-x = 1:length(richness_500)
-plot(x =x, y =richness_500)
+
+#richness_500 = challenge_C(76)
+#x = 1:length(richness_500)
+#plot(x =x, y =richness_500)
 
 #odf =  data.frame(index = x, richness = richness_500)
 #df = data.frame(index = x[1:50000], richness = richness_500[1:50000])

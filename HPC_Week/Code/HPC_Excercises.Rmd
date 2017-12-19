@@ -290,14 +290,14 @@ challenge_C = function(iterbegin){
     file = paste("my_test_file", iter, ".rda", sep = "_")
     file = paste("../Results/", file, sep = "")
     load(file)
-    n = length(spec_rich_store)/100
+    n = length(spec_rich_store)
     start_no = 1
     it = start_no
     if (n > start_no){
       for (it in start_no:n){
-        summing = length(unique(spec_rich_store[it:(it+99)]))
+        summing = spec_rich_store[it]
         vect = c(vect, summing)
-        it = it + 99
+        it = it + 1
       }
     }
     iter = iter + 1
@@ -308,6 +308,7 @@ challenge_C = function(iterbegin){
 
 richness_500 = challenge_C(1)
 x = 1:length(richness_500)
+
 
 plot(x =x, y =richness_500, xlab = "Generation time", ylab = "Species richness", cex = 0.01  )
 
