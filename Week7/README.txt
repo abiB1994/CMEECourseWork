@@ -1,0 +1,40 @@
+Week 7 Directory:
+
+Code:
+	-blackbirds.py
+	-DrawFW.py
+	-First_IPYNB.ipynb
+	-First_RNB.ipynb
+	-fmr.R
+	-LotkaVoltera.ipynb
+	-LV1.py
+	-LV2.py
+	-LV3.py
+	-LV3.ipynb
+	-LV4.py
+	-LV5.py
+	-Models.ipynb
+	-nets.py
+	-Nets.R
+	-Pandas.ipynb
+	-profileme.py
+	-r6_sympy.ipynb
+	-regexs.py
+	-run_fmr_R.py
+	-running_LV.sh
+	-sql.py
+	-sql2.py
+	-testing.py
+	-Testing_pandas.ipynb
+	-TestR.py
+	-TestR.R
+	-timeitme.py
+	-using_os.py
+Data:
+	-blackbirds.txt
+	-NagyEtAl1999.csv
+	-QMEE_NET_MAT_edges.csv
+	-QMEE_NET_MAT_nodes.csv
+	-TraitInfo.csv
+Results:
+
