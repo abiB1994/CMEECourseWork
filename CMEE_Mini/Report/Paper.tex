@@ -1,0 +1,65 @@
+\documentclass[a4paper]{article}
+\usepackage{color}
+\usepackage[dvips]{graphicx}
+\graphicspath{ {../Results/} }
+\usepackage{multirow}
+\usepackage{dblfloatfix}
+\usepackage{multicol}
+\usepackage{xfrac} 
+\usepackage{nicefrac}
+\usepackage{subfiles}
+\usepackage{gensymb}
+\usepackage{wrapfig,float}
+\setlength{\hoffset}{-0.5in}\hoffset-0.5in
+\setlength{\textwidth}{15cm}
+\topmargin = 20pt
+\voffset = -20pt
+\addtolength{\textheight}{2cm}
+\author{Abigail Millward}
+\date{8th of November 2017}
+    
+%--------------------------------
+\usepackage[
+    backend=biber,
+    style=authoryear,
+    url=false,
+    isbn=false,
+    doi=false,
+    dateabbrev=false,
+    language=british
+    ]{biblatex}
+     
+\addbibresource{CMEE_Mini.bib}
+    
+\begin{document}
+
+\include{ThesisFrontPage}
+
+\section{Abstract}
+
+\subfile{Sections/Abstract}
+
+\begin{multicols}{2}            
+\section{Introduction}
+
+\subfile{Sections/Introduction}
+
+\section{Materials \& Methods}
+
+\subfile{Sections/Materials_Methods}
+
+\section{Results}
+
+\subfile{Sections/Results}
+
+\section{Discussion}
+
+\subfile{Sections/Discussion}
+\end{multicols}
+
+\section{Conclusion}
+
+\subfile{Sections/Conclusion}
+
+\printbibliography
+\end{document}
