@@ -4,8 +4,10 @@
 \graphicspath{ {../Results/} }
 \usepackage{multirow}
 \usepackage{dblfloatfix}
-\usepackage{multicol}
+\usepackage[colaction]{multicol}
 \usepackage{xfrac} 
+\usepackage{lineno}
+\usepackage{setspace}
 \usepackage{nicefrac}
 \usepackage{subfiles}
 \usepackage{gensymb}
@@ -28,16 +30,26 @@
     dateabbrev=false,
     language=british
     ]{biblatex}
-     
-\addbibresource{CMEE_Mini.bib}
     
+\newcommand\multicollinenumbers{%
+ \linenumbers
+ \def\makeLineNumber{\docolaction{\makeLineNumberLeft}{}{\makeLineNumberRight}}}
+
+    
+\addbibresource{CMEE_Mini.bib}
+  
+  
 \begin{document}
 
 \include{ThesisFrontPage}
 
+\doublespacing
+\linenumbers 
 \section{Abstract}
 
 \subfile{Sections/Abstract}
+
+\multicollinenumbers
 
 \begin{multicols}{2}            
 \section{Introduction}
