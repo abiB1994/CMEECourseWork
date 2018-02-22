@@ -1,3 +1,9 @@
+# !/usr/bin/env python
+
+
+__author__ = "Abigail Baines a.baines17@imperial.ac.uk"
+__version__ = '0.0.5'
+
 # Let printing work the same in Python 2 and 3
 from __future__ import print_function
 import statsmodels.formula.api as smf
@@ -18,6 +24,10 @@ bolts = phy["Boltzmann constant in eV/K"]
 k = bolts[0]
 
 random.seed(1)
+
+
+#Importing DF
+
 
 filename = '../Data/snail_respiration_BK.csv'
 try:

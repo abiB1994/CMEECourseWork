@@ -5,7 +5,7 @@
 
 \begin{table*}[!t]
 \centering
-\caption{Model fit comparisons}
+\caption{Model fit comparisons of \textit{R. balthica} Temperature Performance Curves}
 \label{}
 \begin{tabular}{cllllll}
 \hline
@@ -24,15 +24,15 @@
 
 \subsection*{Data and composition}
 
-The \textit{Radix balthica} datasets used for this study were collected by Dr Eoin O'Gorman,
-Dr Rebecca Kordas and El\'{e}a Giraud from the Hengill valley between May 2015 to August 2017.
+The data was collected from the Hengill valley, Southwest Iceland (64\degree03'N: 21\degree18'W) by Dr E. 
+O'Gorman, Dr R. Kordas and El\'{e}a Giraud from the Hengill valley between May 2015 to August 2017.
 These datasets consisted of a respiration set; respiration data (in micromoles per hour) on
 individuals from 7 different streams (5.5 - 19.3 \degree C), exposed to experimental
 temperatures ranging from 5-45 \degree C, and a feeding dataset; feeding data (in milligrams per m$^{2}$
 per hour) on individuals from 3 different streams (9.6, 14.4 and 19.3 \degree C) exposed to experimental
 temperatures ranging from 5.2-27.5 \degree C. Included with both of these datasets was the mass of 
-the individuals prior to experimentation; this was used to correct all biological traits (respiration 
-rate, feeding rate and the calculated energetic efficiency) by multiplying by $Mass^{\nicefrac{-3}{4}}$. The final datasets consisted of 529 respiration observations, 
+the individuals prior to experimentation; this was used to correct all measured biological traits
+by multiplying by $Mass^{\nicefrac{-3}{4}}$. The final datasets consisted of 529 respiration observations, 
 and 89 feeding observations. Plots were then run to check for characteristic patterns
 in the data, such as a bell curve shape, typical of thermal performance curves (TPCs); following this, several models were run on both datasets using Python 3.6.3 (\cite{van_rossum_python_2001}).
 
@@ -40,7 +40,7 @@ in the data, such as a bell curve shape, typical of thermal performance curves (
 
 \begin{figure}[H]
 \includegraphics{example_TPC.pdf}
-\caption{Example Thermal Performance Curve Plot}
+\caption{Example Thermal Performance Curve Plot of \textit{R. balthica}}
 
 \end{figure}
 
@@ -107,7 +107,7 @@ as low temperature measurements (\textless 5 \degree C) were not made.
 \begin{figure*}[!t]
 \centering
 \includegraphics{Schoolfield_plots.pdf}
-\caption{Schoolfield Temperature performance curves plotted for increasing 
+\caption{Schoolfield Temperature performance curves of \textit{R. balthica} plotted for increasing 
 acclimation temperatures. Parameters of the function are displayed in each 
 unique plot}
 \end{figure*}
@@ -115,7 +115,7 @@ unique plot}
 \begin{figure*}[!t]
 \centering
 \includegraphics{cubic_plots.pdf}
-\caption{Cubic Temperature performance curves plotted for increasing 
+\caption{Cubic Temperature performance curves of \textit{R. balthica} plotted for increasing 
 acclimation temperatures. Parameters of the function are displayed in each 
 unique plot}
 \end{figure*}
@@ -124,7 +124,7 @@ unique plot}
 
 \centering
 \includegraphics{meancorrectedfeeding_vs_exp_acctemp.pdf}
-\caption{Feeding rate response to experimental temperature, with    
+\caption{Feeding rate response of \textit{R. balthica} to experimental temperature, with    
 acclimation temperature included as a factor.}
 \end{figure*}
 
@@ -147,7 +147,7 @@ activation energy of the trait, $T_t$ is the experimental temperature (5 -
 
 \centering
 \includegraphics{meancorrectedeneff_vs_expacctemp.pdf}
-\caption{Energetic efficiency response to experimental temperature, with    
+\caption{Energetic efficiency response of \textit{R. balthica} to experimental temperature, with    
 acclimation temperature included as a factor.}
 \end{figure*}
 
@@ -155,8 +155,8 @@ acclimation temperature included as a factor.}
 \begin{figure*}[!t]
 \centering
 \includegraphics{meancorrectedeneff_vs_acctemp.pdf}
-\caption{Energetic efficiency plotted against acclimation temperature. Tepid and
-warm acclimation differed significantly (p \textless 0.01), whilst cold/warm
+\caption{Energetic efficiency of \textit{R. balthica} plotted against acclimation temperature. Tepid (14.3\degree C) and
+warm (19.3\degree C) acclimation differed significantly (p \textless 0.01), whilst cold (9.6\degree C)/warm
 and cold/tepid returned non-significant results
 ( p \textgreater 0.08).}
 \end{figure*}
@@ -164,7 +164,7 @@ and cold/tepid returned non-significant results
 \subsection*{Model comparison}
 
 In order to compare the fits of models to
-the data (respiration data only), Akaike’s Information Criteria (AIC), Bayesian Information Criteria 
+the respiration data, Akaike’s Information Criteria (AIC), Bayesian Information Criteria 
 (BIC) and R$^2$ values were calculated. Both IC's have their 
 merits, and so both were calculated to ensure the best fitting 
 models were correctly identified. Models with lower AICs/BICs were considered 
