@@ -1,11 +1,11 @@
 # !/usr/bin/env python
 
+# Let printing work the same in Python 2 and 3
+from __future__ import print_function
 
 __author__ = "Abigail Baines a.baines17@imperial.ac.uk"
 __version__ = '0.0.5'
 
-# Let printing work the same in Python 2 and 3
-from __future__ import print_function
 import statsmodels.formula.api as smf
 from sklearn.linear_model import LinearRegression as LR
 from scipy.constants import physical_constants as phy

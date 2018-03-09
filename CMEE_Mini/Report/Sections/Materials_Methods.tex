@@ -5,7 +5,7 @@
 
 \begin{table*}[!t]
 \centering
-\caption{Model fit comparisons of \textit{R. balthica} Temperature Performance Curves}
+\caption{Model fit comparisons of \textit{R. balthica} respiration rate Performance Curves}
 \label{}
 \begin{tabular}{cllllll}
 \hline
@@ -24,17 +24,16 @@
 
 \subsection*{Data and composition}
 
-The data was collected from the Hengill valley, Southwest Iceland (64\degree03'N: 21\degree18'W) by Dr E. 
-O'Gorman, Dr R. Kordas and El\'{e}a Giraud from the Hengill valley between May 2015 to August 2017.
+The data were collected from the Hengill valley, Southwest Iceland (64\degree03'N: 21\degree18'W) by Dr R. Kordas and El\'{e}a Giraud from the Hengill valley between May 2015 to August 2017.
 These datasets consisted of a respiration set; respiration data (in micromoles per hour) on
 individuals from 7 different streams (5.5 - 19.3 \degree C), exposed to experimental
 temperatures ranging from 5-45 \degree C, and a feeding dataset; feeding data (in milligrams per m$^{2}$
 per hour) on individuals from 3 different streams (9.6, 14.4 and 19.3 \degree C) exposed to experimental
-temperatures ranging from 5.2-27.5 \degree C. Included with both of these datasets was the mass of 
+temperatures ranging from 5.2-27.5 \degree C. Included with both of these datasets were the mass of 
 the individuals prior to experimentation; this was used to correct all measured biological traits
-by multiplying by $Mass^{\nicefrac{-3}{4}}$. The final datasets consisted of 529 respiration observations, 
+by multiplying by $Mass^{\nicefrac{-3}{4}}$ (\cite{brown_toward_2004}). The final datasets consisted of 529 respiration observations, 
 and 89 feeding observations. Plots were then run to check for characteristic patterns
-in the data, such as a bell curve shape, typical of thermal performance curves (TPCs); following this, several models were run on both datasets using Python 3.6.3 (\cite{van_rossum_python_2001}).
+in the data, such as skewed bell curve (observed in Figure 1), typical of thermal performance curves (TPCs); following this, several models were run on both datasets using Python 3.6.3 (\cite{van_rossum_python_2001}).
 
 \subsection*{Data modelling}
 
@@ -52,7 +51,7 @@ with most functions stemming from polynomial models.
 
 Such models include simple phenomenological models (e.g. cubic models) and 
 mechanistic models (e.g. Schoolfield model). Both of these methods of modelling 
-match observed data with a reasonable amount of accuracy; the difference between 
+match observed data with a reasonable amount of accuracy (\cite{affinito_temperature_2017}); the difference between 
 these two types of models is the underlying theory behind them. 
 
 \subsubsection*{Phenomenological}
@@ -65,35 +64,34 @@ that they do. The cubic model formulae was as such:
 B = aT^3 + bT^2 + cT + d
 \end{equation}
 
-Where B was the trait of interest (respiration rate), T is the temperature (in 
+Where B is the trait of interest (respiration rate), T is the temperature (in 
 \degree C) and a,b,c, and d are all mathematical scalars of the function. This 
-function was fitted to the entire respiration data set, and also each individual
-stream/acclimation temperature.
+function was fitted to the entire respiration data set, and also to each individual
+stream/acclimatization temperature.
 
 \subsubsection*{Mechanistic}
 
-A mechanistic models main assumptions are that complex systems can be understood 
+A mechanistic model's main assumptions are that complex systems can be understood 
 by examining its individual parts, and the way in which these phenomena 
 interact. 
 
-For this study, a simplified Schoolfield function following from the Metabolic 
-Theory of Ecology was used:
+For this study, a simplified version of the Schoolfield function (\cite{schoolfield_non-linear_1981}), following from the Metabolic 
+Theory of Ecology, was used:
 
 \begin{equation}
 B = \frac{B_{\theta} e^{\frac{-E}{kT}}}{1 + e^{\frac{E_h}{k} (\frac{1}{T_{pk}} - \frac{1}{T})}}
 \end{equation}
 
-Where B is the trait (respiration rate) value, B$_\theta$ is the normalization 
-constant, $E$ is the activation energy of the curve (measured in eV)
+Where B is the trait (respiration rate) value, $T$ is the experimental temperature (in Kelvin),
+B$_\theta$ is the normalization constant, $E$ is the activation energy of the curve (measured in eV)
 , $E_h$ is the high temperature deactivation energy of the curve, $T_{pk}$ is the temperature (in K) 
-where the model peaks and $k$ is the boltzman constant (8.617 x $10^-5$ eV .$ 
-K^{-1}$).
+where the model peaks and $k$ is the Boltzmann constant (8.617 x $10^-5$ eV $ \cdot  K^{-1}$).
 
-This equation attempts to explain the relationship between temperature, T (in 
-Kelvin), and trait, B at a fundamental level. 
+
+This equation attempts to explain the relationship between temperature, T, and trait, B, on a fundamental level. 
 Temperature is responsible for driving enzyme chemical reactions, which in turn impact on 
 metabolism. B$_\theta$ is the value of the trait at a low temperature 
-(10 \degree C), whilst the Arrhenius equation, ($e^{\nicefrac{-E}{kt}}$),
+(10 \degree C), and controls the lower end of the TPC, whilst the Arrhenius equation, ($e^{\nicefrac{-E}{kt}}$),
 models the temperature dependance of reaction rates during the "normal operating range"
 (between 10 - 35 \degree C) (\cite{brown_toward_2004}).Within the Arrhenius equation,  $E$ controls the enzyme activation energy and 
 is normally within the range of 0.1 - 1eV, with most studies reporting values between 0.5 - 
@@ -108,7 +106,7 @@ as low temperature measurements (\textless 5 \degree C) were not made.
 \centering
 \includegraphics{Schoolfield_plots.pdf}
 \caption{Schoolfield Temperature performance curves of \textit{R. balthica} plotted for increasing 
-acclimation temperatures. Parameters of the function are displayed in each 
+acclimatization temperatures. Parameters of the function are displayed in each 
 unique plot}
 \end{figure*}
 
@@ -116,7 +114,7 @@ unique plot}
 \centering
 \includegraphics{cubic_plots.pdf}
 \caption{Cubic Temperature performance curves of \textit{R. balthica} plotted for increasing 
-acclimation temperatures. Parameters of the function are displayed in each 
+acclimatization temperatures. Parameters of the function are displayed in each 
 unique plot}
 \end{figure*}
 
@@ -125,7 +123,7 @@ unique plot}
 \centering
 \includegraphics{meancorrectedfeeding_vs_exp_acctemp.pdf}
 \caption{Feeding rate response of \textit{R. balthica} to experimental temperature, with    
-acclimation temperature included as a factor.}
+acclimatization temperature included as a factor.}
 \end{figure*}
 
 \subsection*{Linear}
@@ -140,7 +138,7 @@ B = B_{\theta} e^{E_t\frac{T_t - T_0}{kT_tT_0}}
 
 Where B is the trait of interest, $B_0$ is the constant, $E_t$ is the 
 activation energy of the trait, $T_t$ is the experimental temperature (5 - 
-30\degree C), $T_0$ is the average of the experimental temperatures used (17.5\degree C) and k is the Boltzman constant. The equation was subsequently logged to allow for linear models to be plotted.
+30\degree C, within PTR), $T_0$ is the average of the experimental temperatures used (17.5\degree C) and k is the Boltzmann constant. The equation was subsequently logged to allow for linear models to be plotted.
 
 
 \begin{figure*}[!b]
@@ -148,15 +146,15 @@ activation energy of the trait, $T_t$ is the experimental temperature (5 -
 \centering
 \includegraphics{meancorrectedeneff_vs_expacctemp.pdf}
 \caption{Energetic efficiency response of \textit{R. balthica} to experimental temperature, with    
-acclimation temperature included as a factor.}
+acclimatization temperature included as a factor.}
 \end{figure*}
 
 
 \begin{figure*}[!t]
 \centering
 \includegraphics{meancorrectedeneff_vs_acctemp.pdf}
-\caption{Energetic efficiency of \textit{R. balthica} plotted against acclimation temperature. Tepid (14.3\degree C) and
-warm (19.3\degree C) acclimation differed significantly (p \textless 0.01), whilst cold (9.6\degree C)/warm
+\caption{Energetic efficiency of \textit{R. balthica} plotted against acclimatization temperature. Tepid (14.3\degree C) and
+warm (19.3\degree C) acclimatization differed significantly (p \textless 0.01), whilst cold (9.6\degree C)/warm
 and cold/tepid returned non-significant results
 ( p \textgreater 0.08).}
 \end{figure*}
@@ -180,8 +178,8 @@ the more the model explains the data.
 All statistical analses were carried out in R version 3.2.3 (\cite{r_core_team_r:_2013}).
 ANCOVAS (Analysis of Covariance) were used to explore relationships between the 
 dependant variables (respiration rate, feeding rate or energetic efficiency) and Temperature, 
-both acclimation and experimental. The experimental temperature was run in the
-model as a continuous explanitory variable, while the acclimation temperature
+both acclimatization and experimental. The experimental temperature was run in the
+model as a continuous explanitory variable, while the acclimatization temperature
 was used as a categorical variable with the levels: cold, tepid and warm. 
 
 

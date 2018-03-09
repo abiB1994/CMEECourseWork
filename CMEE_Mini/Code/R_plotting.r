@@ -41,7 +41,7 @@ resp_full_plot = ggplot(df2, aes(x =  exp_temp, y = mass_resp, color = stream_te
     stat_function(dat = subset(df2, stream_temp == 13.9), fun = schoolfield139) + stat_function(dat = subset(df2, stream_temp == 14.4), fun = schoolfield14) + 
     stat_function(dat = subset(df2, stream_temp == 19.3), fun = schoolfield19) +
     theme(legend.title = element_text(face="bold"))+
-    scale_color_continuous(name=(expression(paste("Acclimation Temperature (", ~degree ~C,")")))) +
+    scale_color_continuous(name=(expression(paste("Acclimatization Temperature (", ~degree ~C,")")))) +
     geom_text(aes(x, y, label=legends, group=NULL), size = 2, data=legend)
 resp_full_plot 
 
@@ -63,7 +63,7 @@ posthoc <- TukeyHSD(x=avresp,"new_df2$stream_temp_fact", conf.level=0.95)
 posthoc
     
 
-ggplot(new_df, aes(y = log_mass_resp, x = exp_temp, colour = stream_temp_fact )) + geom_boxplot() + scale_colour_discrete(name =(expression(paste("Acclimation Temperature (", ~degree ~C,")")))) +
+ggplot(new_df, aes(y = log_mass_resp, x = exp_temp, colour = stream_temp_fact )) + geom_boxplot() + scale_colour_discrete(name =(expression(paste("Acclimatization Temperature (", ~degree ~C,")")))) +
     xlab("Experimental Temperature") + ylab(expression(paste("Mass Corrected Oxygen Consumption (",mu,"m/h)"))) 
 
 legends = c("a = -9.1e-07\nb = -1.7e-04\nc = 0.0115\nd = -0.066",
@@ -98,7 +98,7 @@ resp_full_plot2 = ggplot(df2, aes(x =  exp_temp, y = mass_resp, color = stream_t
     stat_function(dat = subset(df2, stream_temp == 13.9), fun = cubic_139) + stat_function(dat = subset(df2, stream_temp == 14.4), fun = cubic_14) + 
     stat_function(dat = subset(df2, stream_temp == 19.3), fun = cubic_193) + ylab(expression(paste("Mass Corrected Oxygen Consumption (",mu,"m/h)"))) + 
     xlab(expression(paste("Experimental Temperature (", ~degree ~C,")"))) + theme(legend.title = element_text(face="bold"))+
-    scale_color_continuous(name=(expression(paste("Acclimation Temperature (", ~degree ~C,")"))))# +
+    scale_color_continuous(name=(expression(paste("Acclimatization Temperature (", ~degree ~C,")"))))# +
     #geom_text(aes(x, y, label=legends, group=NULL), size = 2, data=legend)#, parse = T)
 
     
@@ -113,7 +113,7 @@ feed_full_plot = ggplot(df, aes(x =  exp_temp, y = log_mass_feed, color = stream
     stat_smooth(dat = subset(df, stream_temp == 19.3), method = "lm", se = FALSE) +
    ylab(expression(paste("Ln Mass Corrected Feeding rate (mg ",m^-2," ", hr^-1,")"))) + 
     xlab(expression(paste("Experimental Temperature (", ~degree ~C,")"))) + theme(legend.title = element_text(face="bold"))+
-    scale_color_discrete(name=(expression(paste("Acclimation Temperature (", ~degree ~C,")"))))
+    scale_color_discrete(name=(expression(paste("Acclimatization Temperature (", ~degree ~C,")"))))
 feed_full_plot
 
 df$stream_temp_fact = factor(df$stream_temp_fact, labels = c("cold","tepid","warm"))
@@ -134,7 +134,7 @@ anova(acc_feed_model)
 ener_full_plot = ggplot(df, aes(x =  exp_temp, y = En_Eff, color = stream_temp_fact)) + geom_point(shape=1) + facet_wrap(~stream_temp, ncol = 1) + 
                 stat_smooth(method = "lm", se = FALSE) + ylab(expression(paste("Energetic Efficiency (",gamma,")"))) + 
     xlab(expression(paste("Experimental Temperature (", ~degree ~C,")"))) + theme(legend.title = element_text(face="bold"))+
-    scale_color_discrete(name=(expression(paste("Acclimation Temperature (", ~degree ~C,")")))) 
+    scale_color_discrete(name=(expression(paste("Acclimatization Temperature (", ~degree ~C,")")))) 
 ener_full_plot
 ggsave("../Results/eneff_vs_accexptemp.eps", height = 5.5, width = 6.4)
 
@@ -160,8 +160,8 @@ model_acc
 
 Log_massen_full_plot = ggplot(df, aes(x =  stream_temp, y = Log_Eneff_Mass, colour = stream_temp_fact)) + geom_boxplot(aes(group = stream_temp)) + 
      ylab(expression(paste("Ln Mass Corrected Energetic Efficiency(",gamma,")"))) + 
-    xlab(expression(paste("Acclimation Temperature (", ~degree ~C,")"))) + theme(legend.title = element_text(face="bold"))+
-    scale_color_discrete(name=(expression(paste("Acclimation Temperature (", ~degree ~C,")")))) + theme(legend.position="none")
+    xlab(expression(paste("Acclimatization Temperature (", ~degree ~C,")"))) + theme(legend.title = element_text(face="bold"))+
+    scale_color_discrete(name=(expression(paste("Acclimatization Temperature (", ~degree ~C,")")))) + theme(legend.position="none")
 Log_massen_full_plot
 
 ggsave("../Results/meancorrectedeneff_vs_acctemp.eps", height = 4, width = 4)
@@ -190,7 +190,7 @@ ggplot(df, aes(x =  exp_temp, y = Log_Eneff_Mass, colour = stream_temp_fact)) + 
     stat_smooth(dat = subset(df, stream_temp == 19.3), method = "lm", se = FALSE) +
      ylab(expression(paste("Ln Mass Corrected Energetic Efficiency(",gamma,")"))) + 
     xlab(expression(paste("Experimental Temperature (", ~degree ~C,")"))) + theme(legend.title = element_text(face="bold"))+
-    scale_color_discrete(name=(expression(paste("Acclimation Temperature (", ~degree ~C,")"))))
+    scale_color_discrete(name=(expression(paste("Acclimatization Temperature (", ~degree ~C,")"))))
 
 ggsave("../Results/meancorrectedeneff_vs_expacctemp.eps", height = 4.5, width = 6)
 ggsave("../Results/meancorrectedeneff_vs_expacctemp.pdf", height = 4.5, width = 6)
@@ -201,7 +201,7 @@ ggplot(df, aes(x =  exp_temp, y = Log_Eneff, colour = stream_temp_fact)) + geom_
     stat_smooth(dat = subset(df, stream_temp == 19.3), method = "lm", se = FALSE) +
      ylab(expression(paste("Ln Energetic Efficiency"))) + 
     xlab(expression(paste("Experimental Temperature (", ~degree ~C,")"))) + theme(legend.title = element_text(face="bold"))+
-    scale_color_discrete(name=(expression(paste("Acclimation Temperature (", ~degree ~C,")"))))
+    scale_color_discrete(name=(expression(paste("Acclimatization Temperature (", ~degree ~C,")"))))
 
 ggsave("../Results/lneneff_vs_expacctemp.eps", height = 5.5, width = 6.4)
 
@@ -210,7 +210,7 @@ anova(model_accen)
 
 
 
-ggplot(df2, aes(x = exp_temp, y = mass_resp, colour = mass_resp)) + geom_point(size = 0.00002) + 
+ggplot(df2[1:270,], aes(x = exp_temp, y = mass_resp, colour = mass_resp)) + geom_point(size = 0.00002) + 
     theme(axis.ticks.y = element_blank(),axis.text.y = element_blank()) + 
     theme(axis.ticks.x = element_blank(),axis.text.x = element_blank()) + 
     xlab("Temperature") + ylab("Trait response") + 

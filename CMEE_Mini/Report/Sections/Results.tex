@@ -1,22 +1,20 @@
 \documentclass[../../Paper.tex]{subfiles}
     
 \begin{document}
+Models were originally plotted on both the entire datasets and individual streams; this
+was done so as to gauge whether acclimatization temperature significantly affected the overall
+results.
+Preliminary results showed that there was a significant difference between 
+streams in regards to the model parameter values used, and so subsequent models were plotted
+on individual streams only. 
 
-
-Models were originally plotted on both the entire datasets and individual streams; 
-preliminary results showed that there was a significant difference between 
-streams in regards to the models used, and so subsequent models were plotted
-on individual streams. 
-
-\subsection*{Results}
+\subsection*{Respiration rate}
 A linear model was plotted on the respiration data first in order to estimate a value for $E$ and $B_0$, and to calculate significance. 
 The linear model was plotted over the temperatures 5-30\degree C; the parameter 
 outcomes where then used as the starter parameters for subsequent models. Repiration rate significantly increased with
 increasing experimental temperature (ANCOVA: $F_{1,322}$ = 1027.27, p \textless  0.000001).
 
 \subsubsection*{Model fitting - Phenomenological vs Mechanistic}
-
-
 
 The cubic and Schoolfield models applied to stream specific data fit with a
 reasonable amount of accuracy; the worst performing model (cubic, fit to stream 5.6) 
@@ -33,26 +31,30 @@ datasets despite reasonable model fit results. Even when comparing the remaining
 streams, the Schoolfield model still produces a better fit due to a steeper decrease after
 the temperature peak. 
 
-
 \subsection*{Feeding rate}
 
 Feeding rate was found to significantly increase with increasing
 experimental temperature(ANCOVA: $F_{1,83}$ = 21.93, p \textless  0.0001), but
-there was no significant effect with either acclimation temperature 
-(ANCOVA: $F_{2,83}$ = 1.37, p = 0.261) or acclimation temperature on 
+there was no significant effect with acclimatization temperature 
+(ANCOVA: $F_{2,83}$ = 1.37, p = 0.261). acclimatization temperature also did not modify
+the relationship between feeding rate and 
 experimental temperature (ANCOVA: $F_{2,83}$ = 2.01, p = 0.141). 
+
+
+
+\vspace{2.5cm}
+
 
 
 \subsection*{Energetic efficiency}
 
 Energetic efficiency significantly decreased with increasing experimental 
 temperature (ANCOVA: $F_{1,83}$ = 14.61, p \textless  0.0005), and there was a 
-significant effect of acclimation temperature on energetic efficiency 
+significant effect of acclimatization temperature on energetic efficiency 
 (ANCOVA: $F_{2,83}$ = 5.67, p \textless  0.005, Figure 6). There was no significant effect of
-acclimation on the temperature effect on energetic efficiency (ANCOVA: $F_{2,83}$ = 0.78, 
+acclimatization on the temperature effect on energetic efficiency (ANCOVA: $F_{2,83}$ = 0.78, 
 p = 0.46). 
 
-
-
+\vspace{2.5cm}
 
 \end{document}
