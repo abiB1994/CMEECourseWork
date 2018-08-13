@@ -1,0 +1,86 @@
+\documentclass[a4paper]{article}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[left=1.5cm,top=1cm,right=1.5cm,bottom=1cm]{geometry}
+\graphicspath{ {Results/} }
+\usepackage[paper=portrait,pagesize]{typearea}
+\usepackage{multirow}
+\usepackage{dblfloatfix}
+\usepackage{caption}
+\usepackage{parselines} 
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{xfrac} 
+\usepackage{nicefrac}
+\usepackage{subfiles}
+\usepackage{gensymb}
+\usepackage{wrapfig,float}
+\setlength{\hoffset}{-0.5in}\hoffset-0.5in
+\setlength{\textwidth}{15cm}
+\topmargin = 20pt
+\voffset = -20pt
+\addtolength{\textheight}{2cm}
+\author{Abigail Millward}
+\date{8th of November 2017}
+    
+%--------------------------------
+\usepackage[
+    backend=biber,
+    style=authoryear,
+    url=false,
+    isbn=false,
+    doi=false,
+    dateabbrev=false,
+    language=british
+    ]{biblatex}
+     
+\addbibresource{Code/project_pro.bib}
+    
+\begin{document}
+
+\include{ThesisFrontPage}
+
+\include{Declaration}
+
+\begin{abstract}
+      Determining the incidence and types of plant stresses has been of interest for many years, particularly
+    due to their negative impact on agricultural production. Despite this, current methods
+    are very qualitative, with many relying on manual detection which can be highly variable.
+    With this in mind, our aim for this project was to see whether we could use machine learning, in particular Random Forests (RFs) and Convoltional Neural Networks (CNNs),
+    to classify plant stresses from RGB and colour-pass filtered leaf images. Two plant leaf datasets were collected; an infection duration study conducted to assess the impact of \textit{Botrytis cinerea} on \textit{Arabadopsis thaliana} over a 72 hour period, and a complex stress study conducted on tomato leaves. Results showed support for four out of the five proposed hyptheses; hypothesis four (normalised images will improve model performance) was not supported by the data collected. We found strong support that machine learning  can correctly identify both infection duration and complex/multi stresses in an image; both Rfs and CNNs produced training accuracies of \textgreater 85\%. Finally, it was noted that the use of colour-pass filters improve model performance. Overall the results obtained from this study will be greatly benefical to both the botantical and horticultural communities, and to the future of crop production. 
+    
+    \vspace{5mm}
+    Keywords: Digital Pathology, Random Forests, Python, Disease detection,
+    Multi-spectral features, Machine Learning.
+  \end{abstract}
+         
+\section{Introduction}
+
+\subfile{Code/Sections/Introduction}
+
+\section{Materials \& Methods}
+
+\subfile{Code/Sections/Materials_Methods}
+
+\section{Results}
+
+\subfile{Code/Sections/Results}
+
+\section{Discussion}
+
+\subfile{Code/Sections/Discussion}
+
+\section{Conclusions}
+
+\subfile{Code/Sections/Conclusion}
+
+\printbibliography
+
+\pagebreak  
+\KOMAoptions{paper=landscape,pagesize}
+\recalctypearea    
+\section{Appendix}
+\subfile{Code/Sections/Appendix}
+
+
+\end{document}

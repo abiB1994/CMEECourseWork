@@ -1,0 +1,36 @@
+\documentclass[../../Paper.tex]{subfiles}
+    
+\begin{document}
+
+All classification models achieved \textgreater 88\% training accuracy, testing accuracy ranged from 31\% to 94\%. Four out of the proposed hypotheses were supported by the data collected; hypothesis 4 (Normalised images will improve model accuracies) was not supported by the data obtained. Furthermore, a website containing some of these models was also built to allow others to test their own images using the models and to allow people to use these techniques in future research. 
+
+
+\subsection*{Multi-stress treatments}
+
+The results obtained from the multi-stress classifiers support hypothesis 1; both machine learning algorithms will be able to correctly classify the images with a training accuracy of \textgreater 85\%. Several studies have looked into classifying simple treatment images (see: \cite{baranowski_hyperspectral_2015,mohanty_using_2016,sladojevic_deep_2016,singh_detection_2017}) with classification accuracies ranging from 31.4\% to 99.35\%; despite this, there are no studies clearly documenting multi-stress classification experiments. Due to this, we believe that our results will be extremely significant both in the field and in future experiments. Knowing the impact that both biotic and abiotic factors have on plant growth, particularly when combined, will become extremely useful in disease identification as well as future treatment measures. 
+
+Validation accuracies for models trained on datasets 1-3 were obtained from a mixed test set; several images were collected from various datasets. This may partly explain the lower testing accuracy (Table 1); despite this, the results obtained are indicative of a good overall model, with the potential to be used in future treatment studies. A Website was created containing the models created, allowing individuals to classify their own images. We aim to develop this into a fully functioning application to be used in future studies, whilst also allowing other users to add improvements and further train the models on new datasets.
+
+Despite the obvious benefits of CNNs in comparison to RFs, classification results were almost identical (Table 1); the prediction certainties of true positive test results (Figure 5a) show that CNNs produce a significantly higher percentage certainty in comparison to RFs. This then allows support for hypothesis 5; CNNs are better classifiers in comparison to RFs. This has already been noted in several studies, with Baranowski \textit{et al} (2015) noting a classification rate of 55\% for a RF model, and 80\% for a Back-Propagation NN. With many ways to interpret a models output, it can often be difficult to settle on one statistic; it is believed that by producing several model comparison statistics, a more general view of the model can be obtained. Calculating percentage certainties when model outputs appear similar allows for the user to be more certain in the case of an unknown test image, whilst also allowing for another means of comparison when comparing known images. 
+
+The use of colour-pass filters increased the models accuracy (Table 1); hypothesis 3 was thereby supported by this study. Colour-pass filters block out their colour specific wavelengths, and have been used before in an ecological classification survey (\cite{knoth_unmanned_2013}). By using them in classification studies, the object in question can come into focus whilst also allowing certain aspects of the object to become more apparent, as shown in Figure 2. Due to the price and accessibility of colour-pass filters in comparison to Hyperspectral imaging cameras, as well as the results obtained from this study, we recommend that colour-pass filters be included in more classification studies to allow for greater data to be brought out of a dataset. Due to the ease of applying a colour-pass filter to a dataset, this method will also allow for the wider botanical and agricultural community to apply these techniques in future research. 
+
+Training and testing on a normalised dataset resulted in models of a lower accuracy than identical models trained on non-normalised images; normalised images appeared to have a negative effect on classification rates, thus resulting in the rejection of hypothesis 4. It is possible that the process of normalising an image distorts the feature space of the image, thus making it harder for a model to classify. It is also possible that the method used to normalise the images was not sufficient; future studies should look into a wider array of normalising approaches, so as to ensure sufficient evidence has been obtained before making any compelling statements. 
+
+
+\subsubsection*{Duration Infection}
+
+The results of both models trained on the duration infection dataset support hypothesis 2;  RFs and CNNs will be able to correctly classify the images with a training accuracy of \textgreater 85\%. Another study, conducted by Zhu \textit{et al} 2016, also looked into classifying infection duration images; classification accuracies of up to 95\% were established. Their study noted that is it hyperspectral imaging that has the potential to aid presymptomatic disease detection; our results indicate that even simple RGB images have the ability to advance detection. Being able to classify between healthy, 10hpi and 72hpi leaves will greatly improve presymptomatic treatment; applying this technique in the field will allow for more precise pesticide and insecticide application, which is beneficial to both the community and the environment.
+
+As in multi-treatment classification, the results for both models were almost identical (Table 1), whilst the prediction certainties (Figure 5b) show that CNNs produce a significantly higher percentage certainty in comparison to RFs. This then allows for further support for hypothesis 5. 
+
+
+\subsection*{Pixel Intensities}
+
+Pixel intensities for both datasets show that each treatment was significantly different to all other treatments within that dataset (Figures 7 and 8); this allows for further support of the classifiers built, by acknowledging that they are classifying on relatively discrete and distinct treatments.
+
+Appendix figures 1 and 2 show a more detailed view of the pixel intensities for each treatment. Two clear patterns are observed in Appendix Figure 1; the blue channel in the infection duration study significantly decreases as time increase, whilst the green and red channel significantly increase at 72hpi. This is likely an indication of ongioing infection, with the overall leaf colour changing from a green in 10hpi to a yellow/brown in 72hpi. Between 34 and 72hpi it is likely that chlorosis began, thus resulting in an increase in intensity in the red and green channels in the 72hpi treatment. 
+
+\end{document}
+   
+   
