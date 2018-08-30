@@ -21,7 +21,7 @@
 \textbf{\#39}                                                                & Skeleton Exotic Sangria                                        &                      &           &           &                      &           &           \\ \cline{1-2}
 \textbf{\#41}                                                                & Salmon                                                         &                      &           &           &                      &           &           \\ \cline{1-2}
 \textbf{\#47}                                                                & Light Rose Purple                                              &                      &           &           &                      &           &           \\ \cline{1-2}
-\textbf{\#4930}                                                              & CalColor 30 Lavender                                           &                      &           &           &                      &           &           \\ \cline{1-2}
+\textbf{\#4930}                                                              & CalColor 30 Lavendar                                           &                      &           &           &                      &           &           \\ \cline{1-2}
 \textbf{\#59}                                                                & Indigo                                                         &                      &           &           &                      &           &           \\ \cline{1-2}
 \textbf{\#3220}                                                              & Double Blue                                                    & \textbf{}            & \textbf{} & \textbf{} & \textbf{}            & \textbf{} & \textbf{} \\ \cline{1-2}
 \textbf{\#65}                                                                & Daylight Blue                                                  &                      &           &           &                      &           &           \\ \cline{1-2}
@@ -54,26 +54,6 @@
 \includegraphics[height = 15cm, width = 24cm]{cnn_4.jpg}
 \caption{Layout for the Convolutional Neural Network model used. The model begins which a reshaping and recasting layer, followed by several convolutional and pooling layers. These layers are conducted to extract classifying information and features from the training images. After all pooling layers, several flattening and a dense layer are run; these are run to convert the convolutional layer outputs into probabilities for each classifying class (8 classes for both the multi-stress and infection duration studies). 
 The dropout layer is included to reduce the risk of over-fitting. Finally, accuracy and loss calculations were conducted after each iteration of the model, which are plotted in Figure 5.
-}
-\end{figure*}
-
-
-\begin{figure*}[!b]
-\includegraphics[height = 15cm, width = 22cm]{PPIA.png}
-\caption{Main page of the website created. On the top bar there are multiple links to upload images, with the side bar for previewing already uploaded images, disease information and potential published papers referencing the website.
-}
-\end{figure*}
-
-
-\begin{figure*}[!b]
-\includegraphics[height = 15cm, width = 22cm]{ppia2.png}
-\caption{Upload page for the website. A drag and drop feature was enabled so that multiple images and folders can be uploaded easily.
-}
-\end{figure*}
-
-\begin{figure*}[!b]
-\includegraphics[height = 12cm, width = 19cm]{ppia_output.png}
-\caption{Sample output graphic from the website created from several test images. The current algorithm allows for users to test their images against multiple ML algorithms, such as KNN and RF. We aim to enable testing against the CNNs in the next website update.
 }
 \end{figure*}
 

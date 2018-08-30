@@ -17,7 +17,7 @@ The pixel intensities gathered from the RGB images in the multi-stress and infec
 
 \subsection*{Multi-stress treatments}
 
-We wanted to test the ability of both CNNs and RFs to classify multi-stress images; all models were built and trained on the same set of multi-stress images, and tested on a separate set of images. The four versions of the multi-stress image dataset (1 - RGB, 2 - RGB and two colour filters, 3 - RGB and all filters, 3-NORM - normalised dataset 3) show slight variation in performance (Table 2). All training accuracies were \textgreater 90\%, superseding the theoretical random classifier (12.5\%) and human expert (75\%).
+We wanted to test the ability of both CNNs and RFs to classify multi-stress images; all models were built and trained on the same set of multi-stress images, and tested on a seperate set of images. The four versions of the multi-stress image dataset (1 - RGB, 2 - RGB and two colour filters, 3 - RGB and all filters, 3-NORM - normalised dataset 3) show slight variation in performance (Table 2). All training accuracies were \textgreater 90\%, superseding the theoretical random classifier (12.5\%) and human expert (75\%).
 
 
 Both RFs and CNNs returned high (\textgreater  88\%) training accuracies for all datasets; training accuracies decreased as datasets contained more colour-pass filter images (Table 2). Despite this, testing/ validation accuracies increased as more colour-pass images were included. 
@@ -31,7 +31,7 @@ As both CNN and RF models were returning similar accuracy ratings, the percentag
 \begin{table}[!b]
 \caption{Outputs of all models trained on all datasets (1-4); training and testing accuracies were compared between models to assess model fit. 
 \\
-Dataset 1 - Multi-stress images, RGB only, Dataset 2 - Multi-stress RGB and 3 colour-pass filters, Dataset 3 - Multi-stress RGB and all colour-pass filters and Dataset 4 - Infection duration dataset, RGB only.}
+Dataset 1 - Multi-stress images, RGB only, Dataset 2 - Multi-stress RGB and 3 color-pass filters, Dataset 3 - Multi-stress RGB and all colour-pass filters and Dataset 4 - Infection duration dataset, RGB.}
 \begin{tabular}{ccccllll}
 \cline{1-4}
 \multicolumn{1}{|l|}{\textit{\textbf{Model Type}}}                                                                     & \multicolumn{1}{l|}{\textit{\textbf{Training Images}}} & \multicolumn{1}{c|}{\textbf{Training Accuracy (\%)}} & \multicolumn{1}{l|}{\textbf{Test Accuracy (\%)}} &           & \multicolumn{1}{c}{} &           &           \\ \cline{1-4}
@@ -54,8 +54,8 @@ Dataset 1 - Multi-stress images, RGB only, Dataset 2 - Multi-stress RGB and 3 co
 
 \subsection*{Duration Infection}
 
-To test the ability of both CNNs and RFs in their ability to classify infection duration images, several models were built and trained on the same set of infection duration images, and tested on a separate set of images. The infection duration dataset (dataset 4) was correctly (\textgreater 85\%) classified by both models; both testing and training accuracies were \textgreater 90\%, far greater than random chance and human accuracies.
-\clearpage
+To test the ability of both CNNs and RFs in their ability to classify infection duration images, several models were built and trained on the same set of infection duration images, and tested on a seperate set of images. The infection duration dataset (dataset 4) was correctly (\textgreater 85\%) classified by both models; both testing and training accuracies were \textgreater 90\%, far greater than random chance and human accuracies.
+
 Both RF and CNNs managed to return a \textgreater 97\% training accuracy and a 94\% testing accuracy (Table 1); when true positive prediction certainties were compared (Figure 6b), CNNs were found to be significantly more certain in comparison to the RF model (ANOVA: $F_{1,120}$ = 216.3, p \textless 0.0001). 
 
 \begin{figure}[!t]
@@ -74,15 +74,15 @@ Both RF and CNNs managed to return a \textgreater 97\% training accuracy and a 9
 = 216.3, p \textless 0.0001) accuracy results in comparison to RFs.}
   \label{fig:sub1}
 \end{subfigure}
-\caption{True Positive test accuracy results for RF and CNN models trained on multi-stress dataset 3 and duration dataset 4. True positive accuracies were obtained from test results of the models; correctly classified image accuracies were compiled for each individual model. The letters plotted on the graphs show the Tukey post-hoc comparisons.}
+\caption{True Positive test accuracy results for RF and CNN models trained on multi-stress dataset 3 and duration dataset 4. True postive accuracies were obtained from test results of the models; correctly classified image accuracies were compiled for each individual model.}
 \label{fig:test}
 \end{figure}
 
 
 \begin{figure}[!b]
   \centering
-  \includegraphics[scale = 0.62]{treatments3.jpg}
-  \caption{Pixel Intensities of the multi-stress dataset (RGB images only); each boxplot contains pixel intensities from all channels (RGB) of the treatment image. All treatments were proven to be statistically different from one another(ANOVA: $F_{7,4646161}$ = 38676, p \textless 0.0001). The letters on the graph show the Tukey post-hoc comparisons.}
+  \includegraphics[scale = 0.59]{treatments3.jpg}
+  \caption{Pixel Intensities of the multi-stress dataset (RGB images only); each boxplot contains pixel intensities from all channels (RGB) of the treatment image. All treatments were proven to be statistically different from one another(p \textless  0.0001).}
   \label{fig:sub1}
 \end{figure}
 \subsection*{Pixel Intensities}
@@ -93,11 +93,11 @@ Pixel intensities were extracted from dataset 1 (multi-stress, RGB only) and dat
 \begin{figure}[!b]
   \centering
   \includegraphics[scale = 0.55]{treatments11.jpg}
-  \caption{Pixel Intensities for part of the infection duration dataset (dataset 4); each boxplot contains pixel intensities from all channels (RGB) of the treatment image. All treatments were proven to be statistically different from one another (ANOVA:  $F_{2,1628925}$ = 32894, p \textless  0.0001). The letters on the graph show the Tukey post-hoc comparisons.}
+  \caption{Pixel Intensities for part of the infection duration dataset (dataset 4); each boxplot contains pixel intensities from all channels (RGB) of the treatment image. All treatments were proven to be statistically different from one another (p \textless  0.0001).}
   \label{fig:sub2}
 \end{figure}
 
 When pixel intensities were compared between treatments, both multi-stress and duration infection treatments returned significant results (ANOVA multi-stress:  $F_{7,4646161}$ = 38676, p \textless 0.0001; ANOVA duration infection:  $F_{2,1628925}$ = 32894,  p \textless 0.0001); Figures 7 and 8 show that all treatment types were significantly different from one another. Further comparison shows that channels significantly differ both within and between treatments (ANOVA duration infection: Appendix Figure 1, $F_{8,1628919}$ = 3437540,  p \textless 0.0001; ANOVA multi-stress: Appendix Figure 2, $F_{23,4646145}$ = 17195, p \textless 0.0001).
-\clearpage
+
 \pagebreak
 \end{document}

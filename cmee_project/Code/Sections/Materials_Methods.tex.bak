@@ -12,9 +12,9 @@
 
 The data used was collected during 2009 and 2017; the 2009 data was collected by Dr Oliver Windram, and the 2017 data was collected by myself and Chris Adams. 
 
-The 2009 data was collected to look at the effect of \textit{Botrytis cinerea} on \textit{Arabodopsis thaliana} (Figure 4); the data was collected over a period of 72 hours, allowing us to look at the effect of duration of infection. The time periods for this dataset were 10hpi (hours post infection), 18hpi, 26hpi, 34hpi, 42hpi, 48hpi, 72hpi and non-infected/ control. Images in this dataset were taken under a RGB sensor only. 
+The 2009 data was collected to look at the effect of \textit{Botrytis cineria} on \textit{Arabodopsis thaliana} (Figure 4); the data was collected over a period of 72 hours, allowing us to look at the effect of duration of infection. The time periods for this dataset were 10hpi (hours post infection), 18hpi, 26hpi, 34hpi, 42hpi, 48hpi, 72hpi and non-infected/ control. Images in this dataset were taken under a RGB sensor only. 
 
-The 2017 data was collected to look at the effect of multiple stressors on tomato leaves (Figure 5); a combination of drought stress, Nitrogen deficiency, and \textit{Botrytis cinerea} were applied (see Table 1 for each treatment type) and left for 72 hours, after which several images were taken, including a RGB image and a range of images under colour-pass filters (appendix table 1).
+The 2017 data was collected to look at the effect of multiple stressors on tomato leaves (Figure 5); a combination of drought stress, Nitrogen deficiency, and \textit{Botrytis cineria} were applied (see Table 1 for each treatment type) and left for 72 hours, after which several images were taken, including a RGB image and a range of images under colour-pass filters (appendix table 1).
 
 Both datasets were then cropped to contain individual leaf images; once this was done each individual image was processed, as laid out in Figure 3, ready for image classification. 
 
@@ -32,7 +32,7 @@ The duration infection dataset did not contain additional filters; only one data
 
 \begin{table*}[!t]
 \centering
-\caption{Treatment types for tomato leaves in multi-stress study. Stresses used were Drought, Nitrogen deficiency and \textit{Botrytis cinerea} infection.}
+\caption{Treatment types for tomato leaves in multi-stress study. Stresses used were Drought, Nitrogen deficiency and \textit{Botrytis cineria} infection.}
 \label{my-label}
 \begin{tabular}{clllllll}
 \cline{3-6}
@@ -99,7 +99,7 @@ In order to allow for easier comparison between datasets, Dataset 3 was normalis
         \caption{Healthy control}
   		\label{fig:sub2}
     \end{subfigure}
-    \caption{Sample images of \textit{Arabodopsis thaliana} infected with \textit{Botrytis cinerea}. Individual image captions show duration of infection.} 
+    \caption{Sample images of \textit{Arabodopsis thaliana} infected with \textit{Botrytis cineria}. Individual image captions show duration of infection.} 
 \label{fig:test}
 \end{figure}
 
@@ -153,15 +153,13 @@ In order to allow for easier comparison between datasets, Dataset 3 was normalis
         \caption{Nitrogen-drought-infection}
   		\label{fig:sub1}
     \end{subfigure}
-    \caption{Sample images of tomato leaves infected with \textit{Botrytis cinerea}, and stressed with drought and nitrogen deficiency. Individual image captions show combination of stresses.} 
+    \caption{Sample images of tomato leaves infected with \textit{Botrytis cineria}, and stressed with drought and nitrogen deficiency. Individual image captions show combination of stresses.} 
 \label{fig:test}
 \end{figure}
 \subsubsection*{Data Augmentation - Reducing over-fitting}
 
 One of the easiest and most common methods of minimising the risks of over-fitting on image data, is to artificially enlarge
-the dataset(s) (Figure 3: \cite{simard_best_2003,krizhevsky_imagenet_2012,sladojevic_deep_2016, ubbens_deep_2017}). Another benefit of this approach is that data generation/ augmentation has been noted to improve classifier performance (see:\cite{yaeger_effective_1996}, or \cite{krizhevsky_imagenet_2012}),  by increasing the chance for the classifier to learn appropriate features of each treatment (\cite{sladojevic_deep_2016}). 
-\pagebreak
-We augmented the dataset using a pre-built data generator in the Keras library (\cite{chollet2015keras}); each image was randomly augmented 20 times using simple  distortions such as translations,  rotations, and  
+the dataset(s) (Figure 3: \cite{simard_best_2003,krizhevsky_imagenet_2012,sladojevic_deep_2016, ubbens_deep_2017}). Another benefit of this approach is that data generation/ augmentation has been noted to improve classifier performance (see:\cite{yaeger_effective_1996}, or \cite{krizhevsky_imagenet_2012}),  by increasing the chance for the classifier to learn appropriate features of each treatment (\cite{sladojevic_deep_2016}). We augmented the dataset using a pre-built data generator in the Keras library (\cite{chollet2015keras}); each image was randomly augmented 20 times using simple  distortions such as translations,  rotations, and  
 skewing.
 
 \subsubsection*{Feature extraction}
@@ -217,7 +215,7 @@ Models were adjusted to assess impacts on model accuracies; the number of trees 
 
 \subsubsection*{Pixel Intensities}
 
-In order to further validate the predictions the classifiers made, and to ensure that there are valid differences between each treatment, pixel intensities were gathered. 
+In order to further validate the predications the classifiers made, and to ensure that there are valid differences between each treatment, pixel intensities were gathered. 
 
 To do this, the background was first masked, so that only the leaves were visible (Figure 4). After this each leaf was labelled in relation to the treatment, and pixel intensities of each treatment leaf were gathered using Python 3.7  (\cite{van_rossum_python_2001}). These Pixel Intensities were then compared using an ANOVA. 
 
@@ -230,7 +228,7 @@ To compare between classifiers, separate test datasets, consisting of 209 durati
 \subsection*{Statistical analysis}
 
 All statistical analyses were carried out in R version 3.2.3 (\cite{r_core_team_r:_2013}).
-ANOVAS (Analysis of Variance) and subsequent Tukey post-hoc tests were used to explore variance between treatments within both datasets.
+ANOVAS (Analysis of Variance) were used to explore variance between treatments within both datasets.
 
 
 
